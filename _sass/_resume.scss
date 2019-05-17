@@ -20,13 +20,14 @@ dd {
 
 .mission{
     color: $bright-blue;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 }
 
 .mission em{
     color: $link-color;
+    display:block;
 }
 
 
@@ -49,6 +50,7 @@ dd {
     .mission {
         font-size: 1.8rem;
         text-align: center;
+        display:inline;
         dt {
             display: block;
             text-align: center;
