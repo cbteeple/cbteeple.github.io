@@ -20,6 +20,7 @@ $max_page_width : 860px;
     border-style: Dashed;
     border-color: #626262;
     border-width: 1px;
+    margin-bottom: $spacer
 }
 
 .section-title {
@@ -50,6 +51,7 @@ a {
 
     &:hover {
         color: #2581BA;
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
+
