@@ -32,3 +32,15 @@ $max_page_width : 860px;
         background: #222;
     }
 }
+
+a {
+    color: black!important;
+    background: rgba(66, 134, 244, 0);
+    text-decoration: none;
+    transition: all linear .2s;
+
+    &:hover {
+        background: rgba(66, 134, 244, .3);
+        text-decoration: none;
+    }
+}
