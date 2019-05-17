@@ -5,20 +5,23 @@
     <dt/>
 </dl>
 
-<h3 class="section-title">Experience</h3>
-<dl class="experience">
-    {% for job in site.data.jobs %}
-        <dt>
-            <p class="title">{{ job.title }}</p>
-            <p class="company">{{ job.company }}</p>
-            <p class="period">{{ job.period }}</p>
-        </dt><!--
-        --><dd>
-            <p>{{ job.description }}</p>
-        </dd>
-    {% endfor %}
-</dl>
+<div class="little-box">
+    <h3 class="section-title">Experience</h3>
+    <dl class="experience">
+        {% for job in site.data.jobs %}
+            <dt>
+                <p class="title">{{ job.title }}</p>
+                <p class="company">{{ job.company }}</p>
+                <p class="period">{{ job.period }}</p>
+            </dt><!--
+            --><dd>
+                <p>{{ job.description }}</p>
+            </dd>
+        {% endfor %}
+    </dl>
+</div>
 
+<div class="little-box">
 <h3 class="section-title">Education</h3>
 <dl class="education">
     {% for qualification in site.data.education %}
@@ -32,7 +35,10 @@
         </dd>
     {% endfor %}
 </dl>
+</div>
 
+
+<div class="little-box">
 <h3 class="section-title">Publications</h3>
 <dl class="publications">
     {% for pub in site.data.publications %}
@@ -43,3 +49,4 @@
         </dt>
     {% endfor %}
 </dl>
+</div>
