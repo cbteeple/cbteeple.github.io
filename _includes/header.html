@@ -13,17 +13,18 @@
             {% if site.github_username or site.codepen_username or site.twitter_username or site.email_address or site.linkedin_username %}
             <div class="social">
                 {% if site.email_address %}<a href="http://{{ site.site_address }}" target="_blank">
-                <div><img class=social-icon src="img/icons/web.png">Website</div>
+                <div class="social-section"><img class=social-icon src="img/icons/web.png">Website</div>
                 </a>{% endif %}
                 {% if site.github_username %}<a href="http://github.com/{{ site.github_username }}" target="_blank">
-                <div><img class=social-icon src="img/icons/github.png">GitHub</div>
+                <div class="social-section"><img class=social-icon src="img/icons/github.png">GitHub</div>
                 </a>{% endif %}
                 {% if site.twitter_username %}<a href="http://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a>{% endif %}
                 {% if site.codepen_username %}<a href="http://codepen.io/{{ site.codepen_username }}" target="_blank">CodePen</a>{% endif %}
-                {% if site.linkedin_username %}<a href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn
+                {% if site.linkedin_username %}<a href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+                <div class="social-section"><img class=social-icon src="img/icons/web.png">LinkedIn</div>
                 </a>{% endif %}
                 {% if site.email_address %}<a href="mailto:{{ site.email_address }}" target="_blank">
-                <div><img class=social-icon src="img/icons/email.png">Email</div>
+                <div class="social-section"><img class=social-icon src="img/icons/email.png">Email</div>
                 </a>{% endif %}
             </div>
             {% endif %}
