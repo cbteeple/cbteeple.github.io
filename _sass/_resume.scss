@@ -50,11 +50,14 @@ dd {
     .mission {
         font-size: 1.8rem;
         text-align: center;
-        display:inline;
         dt {
             display: block;
             text-align: center;
         }
+    }
+
+    .mission em{
+        display:inline;
     }
 
     .experience {
