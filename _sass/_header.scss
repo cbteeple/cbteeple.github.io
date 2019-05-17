@@ -2,7 +2,7 @@
 // @description All header styles
 
 header {
-    border-bottom: 1px solid #2581BA;
+    border-bottom: 1px solid &box-bg;
     padding: ($spacer * 2) 0;
     margin-bottom: ($spacer * 2);
 

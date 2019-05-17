@@ -17,6 +17,18 @@ dd {
     margin-bottom: $big_spacer;
 }
 
+
+.mission{
+    color: $bright-blue;
+}
+
+.mission .emph{
+    color: $link-color;
+    display: inline;
+}
+
+
+
 @media(min-width: 640px) {
     
     dt {
