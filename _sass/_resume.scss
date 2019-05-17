@@ -5,7 +5,13 @@ dl {
     margin-bottom: $spacer;
 }
 
-dt, dd {
+dt {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: $spacer;
+}
+
+dd {
     display: inline-block;
     vertical-align: top;
     margin-bottom: $big_spacer;
