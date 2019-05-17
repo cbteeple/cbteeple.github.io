@@ -1,0 +1,20 @@
+# Jekyll Resume Theme
+
+# Site settings
+title: Clark Teeple
+email: cbteeple@gmail.com
+description: Clark Teeple's Online Resume
+baseurl: ""
+url: "cbteeple.github.io"
+name: Clark Teeple
+job: PhD Candidate in Robotics,
+location: Harvard University
+interests: Robotics
+# twitter_username: thepatrickvarin
+github_username:  cbteeple
+# codepen_username: 
+linkedin_username: clarkteeple
+email_address: cbteeple@gmail.com
+
+# Build settings
+markdown: kramdown

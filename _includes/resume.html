@@ -1,0 +1,45 @@
+<h3 class="section-title">Mission</h3>
+<dl class="mission">
+    <dt>
+        {{site.data.bio.mission}}
+    <dt/>
+</dl>
+
+<h3 class="section-title">Experience</h3>
+<dl class="experience">
+    {% for job in site.data.jobs %}
+        <dt>
+            <p class="title">{{ job.title }}</p>
+            <p class="company">{{ job.company }}</p>
+            <p class="period">{{ job.period }}</p>
+        </dt><!--
+        --><dd>
+            <p>{{ job.description }}</p>
+        </dd>
+    {% endfor %}
+</dl>
+
+<h3 class="section-title">Education</h3>
+<dl class="education">
+    {% for qualification in site.data.education %}
+        <dt>
+            <p class="title">{{ qualification.qualification }}</p>
+            <p class="company">{{ qualification.school }}</p>
+            <p class="period">{{ qualification.period }}</p>
+        </dt><!--
+        --><dd>
+            <p>{{ qualification.description }}</p>
+        </dd>
+    {% endfor %}
+</dl>
+
+<h3 class="section-title">Publications</h3>
+<dl class="publications">
+    {% for pub in site.data.publications %}
+        <dt>
+            <p class="title"><a href="{{pub.link}}">{{ pub.title }}</a></p>
+            <p class="company">{{ pub.names }}</p>
+            <p class="company">{{ pub.journal }} - {{pub.year}}</p>
+        </dt>
+    {% endfor %}
+</dl>

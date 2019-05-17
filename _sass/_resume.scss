@@ -1,0 +1,80 @@
+// @name Resume
+// @description All resume styles
+
+dl {
+    margin-bottom: $spacer;
+}
+
+dt, dd {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: $spacer;
+}
+
+@media(min-width: 640px) {
+    
+    dt {
+        padding-right: 5px;
+    }
+
+    dd {
+        text-align: justify;
+    }
+
+    dt, dd {
+        margin-bottom: 60px;
+    }
+
+    .mission {
+        dt {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .experience {
+        dt {
+            width: 30%;
+            padding-right: $spacer;
+        }
+        dd {
+            width: 70%;
+        }
+    }
+
+    .education {
+        dt {
+            padding-right: $spacer;
+        }
+        dt, dd {
+            width: 50%;
+        }
+    }
+
+    .publications {
+        dt {
+            width: 100%;
+            // padding-right: $spacer;
+        }
+        // dd {
+        //     width: 30%;
+        // }
+    }
+}
+
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+a {
+    color: black!important;
+    background: rgba(66, 134, 244, 0);
+    transition: all linear .2s;
+
+    &:hover {
+        background: rgba(66, 134, 244, .3);
+        text-decoration: none;
+    }
+}

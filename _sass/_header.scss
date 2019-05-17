@@ -1,0 +1,77 @@
+// @name Header
+// @description All header styles
+
+header {
+    border-bottom: 1px solid #edefee;
+    padding: ($spacer * 2) 0;
+    margin-bottom: ($spacer * 2);
+
+    @media(min-width: $max_page_width) {
+        padding: ($spacer * 6) 0 ($spacer * 3);
+        margin-bottom: ($spacer * 3);
+    }
+}
+
+.header_left {
+    text-align: center;
+    padding: (2 * $spacer);
+    min-width: 200px;
+
+    @media(min-width: $max_page_width){
+        max-width: 40%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: (2*$spacer);
+        border-right: solid thin #222;
+    }
+}
+
+.header_right {
+    @media(max-width: $max_page_width){
+        text-align: center;
+    }
+
+    @media(min-width: $max_page_width){
+        max-width: 60%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+#headshot {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.intro {
+    margin-bottom: ($spacer * 2);
+
+    &_headshot, &_text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__pre, &__post {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    &__main {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        font-weight: bold;
+        margin: 10px 0 20px;
+
+        @media(min-width: $max_page_width) {
+            font-size: 2.2rem;
+            // max-width: 80%;
+        }
+    }
+}
+
+.social {
+    a {
+        margin-right: $spacer;
+    }
+}
