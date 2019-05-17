@@ -18,4 +18,4 @@ email_address: cbteeple@gmail.com
 
 # Build settings
 markdown: kramdown
-future: true
+timezone: America/New_York
