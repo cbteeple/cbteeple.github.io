@@ -4,7 +4,7 @@
 .footer {
     padding: ($spacer * 2) $spacer;
     text-align: center;
-    border-top: 1px solid &box-bg;
+    border-top: 1px solid $box-bg;
 
     &__title {
         font-size: 1.2rem;
@@ -17,6 +17,10 @@
 
     &__credits{
         font-style: italic;
-        padding-top: 20px
+        padding-top: 20px;
+
+        p{
+            padding-top: 10px;
+        }
     }
 }

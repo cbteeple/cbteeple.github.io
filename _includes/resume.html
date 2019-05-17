@@ -4,39 +4,86 @@
     <dt/>
 </dl>
 
-<div class="little-box">
-    <img class="section-icon" src="img/icons/robot-arm.png">  
-    <h3 class="section-title">Experience</h3>
-    <dl class="experience">
-        {% for job in site.data.jobs %}
-            <dt>
-                <p class="title">{{ job.title }}</p>
-                <p class="company"> <a target="_blank" href="{{ job.company_site }}">{{ job.company }}</a></p>
-                <p class="period">{{ job.period }}</p>
-            </dt><!--
-            --><dd>
-                <p>{{ job.description }}</p>
-            </dd>
-        {% endfor %}
-    </dl>
-</div>
+
 
 <div class="little-box">
 <img class="section-icon" src="img/icons/education.png">  
 <h3 class="section-title">Education</h3>
 <dl class="education">
     {% for qualification in site.data.education %}
-        <dt>
-            <p class="title">{{ qualification.qualification }}</p>
-            <p class="company">{{ qualification.school }}</p>
-            <p class="period">{{ qualification.period }}</p>
-        </dt><!--
-        --><dd>
-            <p>{{ qualification.description }}</p>
-        </dd>
+        <div class="resume_container">
+            <dt>
+                <p class="title">{{ qualification.qualification }}</p>
+                <p class="company">{{ qualification.school }}</p>
+                <p class="period">{{ qualification.period }}</p>
+            </dt><!--
+            --><dd>
+                <p>{{ qualification.description }}</p>
+            </dd>
+        </div>
     {% endfor %}
 </dl>
 </div>
+
+
+
+<div class="little-box">
+    <img class="section-icon" src="img/icons/robot-arm.png">  
+    <h3 class="section-title">Experience</h3>
+    <dl class="experience">
+        {% for job in site.data.jobs %}
+            <div class="resume_container">
+                <dt>
+                    <p class="title">{{ job.title }}</p>
+                    <p class="company"> <a target="_blank" href="{{ job.company_site }}">{{ job.company }}</a></p>
+                    <p class="period">{{ job.period }}</p>
+                </dt><!--
+                --><dd>
+                    <p>{{ job.description }}</p>
+                </dd>
+            </div>
+        {% endfor %}
+    </dl>
+</div>
+
+
+
+<div class="little-box">
+<img class="section-icon" src="img/icons/awards.png">  
+<h3 class="section-title">Awards</h3>
+<dl class="education">
+    {% for award in site.data.awards %}
+        <div class="resume_container">
+            <dd>
+                <p class="title"><a target="_blank" href="{{award.link}}">{{ award.name }}</a></p>
+                <p class = "company">{{ award.location }} - {{award.year}}</p>
+            </dd>
+        </div>
+    {% endfor %}
+</dl>
+</div>
+
+
+<div class="little-box">
+<img class="section-icon" src="img/icons/teaching.png">  
+<h3 class="section-title">Teaching</h3>
+<dl class="education">
+    {% for teach in site.data.teaching %}
+        <div class="resume_container">
+            <dt>
+                <p class="title">{{ teach.class }}</p>
+                <p class="company">{{ teach.title }}</p>
+                <p class="company">{{ teach.school }}</p>
+                <p class="period">{{ teach.period }}</p>
+            </dt><!--
+            --><dd>
+                <p>{{ teach.description }}</p>
+            </dd>
+        </div>
+    {% endfor %}
+</dl>
+</div>
+
 
 
 <div class="little-box">
@@ -44,11 +91,13 @@
 <h3 class="section-title">Publications</h3>
 <dl class="publications">
     {% for pub in site.data.publications %}
-        <dt>
-            <p class="title"><a target="_blank" href="{{pub.link}}">{{ pub.title }}</a></p>
-            <p class="company">{{ pub.names }}</p>
-            <p class="company">{{ pub.journal }} - {{pub.year}}</p>
-        </dt>
+        <div class="resume_container">
+            <dd>
+                <p class="title"><a target="_blank" href="{{pub.link}}">{{ pub.title }}</a></p>
+                <p class="company">{{ pub.names }}</p>
+                <p class="company">{{ pub.journal }} - {{pub.year}}</p>
+            </dd>
+        </div>
     {% endfor %}
 </dl>
 </div>

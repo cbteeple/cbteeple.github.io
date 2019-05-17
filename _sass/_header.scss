@@ -2,13 +2,13 @@
 // @description All header styles
 
 header {
-    border-bottom: 1px solid &box-bg;
     padding: ($spacer * 2) 0;
     margin-bottom: ($spacer * 2);
 
     @media(min-width: $max_page_width) {
-        padding: ($spacer * 6) 0 ($spacer * 3);
-        margin-bottom: ($spacer * 3);
+        padding: ($spacer * 2) 0;
+        margin-bottom: 0;
+        margin-top: ($spacer * 2) ;
     }
 }
 
@@ -71,7 +71,5 @@ header {
 }
 
 .social {
-    a {
-        margin-right: $spacer;
-    }
+
 }

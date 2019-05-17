@@ -1,28 +1,59 @@
 // @name Resume
 // @description All resume styles
 
-dl {
-    margin-bottom: $spacer;
+
+
+
+
+.resume_container{
+    display: block;
+    margin-bottom: $big_spacer;
 }
+
+
+.resume_container:last-child{
+    margin-bottom: 0px;
+}
+
 
 dt {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: $spacer;
+    margin-bottom: $small_spacer;
+}
+
+dt:last-child {
+    margin-bottom: $small_spacer;
 }
 
 dd {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: $big_spacer;
+    margin-left: 0px;
 }
+
+.publications dd{
+    margin-left: 0px;
+}
+
+
+.publications{
+   color:  $bright-blue;
+}
+
+.publications b{
+    font-weight: bold;
+    color: $base-font-color;
+}
+
 
 
 .mission{
     color: $bright-blue;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    margin-bottom: $big_spacer;
 }
 
 .mission em{
@@ -33,22 +64,28 @@ dd {
 
 
 @media(min-width: 640px) {
+
+    .resume_container{
+        margin-bottom: $big_spacer;
+    }
     
     dt {
         padding-right: 5px;
+        margin-bottom: $small_spacer;
+        text-align: left;
     }
 
     dd {
         text-align: justify;
-        margin-bottom: $spacer;
+        margin-left: 0px;
     }
 
-    dt, dd {
-        margin-bottom: 60px;
+    dt:last-child, dd:last-child  {
+        margin-bottom: 0px !important;
     }
 
     .mission {
-        font-size: 1.8rem;
+        font-size: 1.8em;
         text-align: center;
         dt {
             display: block;
@@ -65,6 +102,7 @@ dd {
             width: 30%;
             padding-right: $spacer;
         }
+
         dd {
             width: 70%;
         }
@@ -84,16 +122,16 @@ dd {
             width: 100%;
             // padding-right: $spacer;
         }
-        // dd {
-        //     width: 30%;
-        // }
+        dd {
+         }
     }
 }
 
 .title {
     margin: 0;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    color: $title-color;
 }
 
 
