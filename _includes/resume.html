@@ -37,7 +37,7 @@
 <dl class="publications">
     {% for pub in site.data.publications %}
         <dt>
-            <p class="title"><a href="{{pub.link}}">{{ pub.title }}</a></p>
+            <p class="title"><a target="_blank" href="{{pub.link}}">{{ pub.title }}</a></p>
             <p class="company">{{ pub.names }}</p>
             <p class="company">{{ pub.journal }} - {{pub.year}}</p>
         </dt>
