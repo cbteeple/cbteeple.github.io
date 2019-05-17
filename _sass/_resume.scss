@@ -20,7 +20,8 @@ dd {
 
 .mission{
     color: $bright-blue;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .mission em{
@@ -45,6 +46,7 @@ dd {
     }
 
     .mission {
+        font-size: 1.2rem;
         dt {
             display: block;
             text-align: center;
