@@ -10,7 +10,7 @@
         {% for job in site.data.jobs %}
             <dt>
                 <p class="title">{{ job.title }}</p>
-                <p class="company">{{ job.company }}</p>
+                <p class="company"> <a target="_blank" href="{{ job.company_site }}">{{ job.company }}</a>></p>
                 <p class="period">{{ job.period }}</p>
             </dt><!--
             --><dd>
