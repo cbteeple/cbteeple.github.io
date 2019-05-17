@@ -1,3 +1,1 @@
-mission_pre: 'I make'
-mission_emph: '[soft, gentle, safe]'
-mission_post: 'robotic hands.'
+mission: 'I make <em>[soft, gentle, safe]</em> robotic hands.'
