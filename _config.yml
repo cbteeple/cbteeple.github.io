@@ -18,3 +18,4 @@ email_address: cbteeple@gmail.com
 
 # Build settings
 markdown: kramdown
+future: true
