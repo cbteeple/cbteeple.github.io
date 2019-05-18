@@ -3,12 +3,14 @@
     company_site: micro.seas.harvard.edu
     description: I study soft robotic hands for a variety of real-world applications including deep-sea sampling, precise grasping, and in-hand manipulation
     period: 2016-Present
+    link: https://clarkteeple.weebly.com/research.html
 
 -   title: 'Undergraduate Research Assisant'
     company: 'Vibration and Acoustics Laboratory: Microsystems, University of Michigan'
     company_site: https://microsystems.engin.umich.edu/
     description: My work involved studying locomotion of small-scale legged robots.
     period: 2015-2016
+    link: https://clarkteeple.weebly.com/research.html
 
 -   title: 'Summer Intern'
     company: 'MIT Lincoln Laboratory'
@@ -20,6 +22,7 @@
     company_site: http://lahann.engin.umich.edu/
     description: I developed a LabVIEW / CAD interface to expand the capabilities of the lab’s existing tissue engineering scaffold manufacturing process. I then used this new interface to design and manufacture novel scaffold architectures.
     period: '2013-2015'
+    link: https://clarkteeple.weebly.com/older-work.html
 
 -   title: 'Manufacturing Engineering Intern'
     company: 'Kandu Incorperated'

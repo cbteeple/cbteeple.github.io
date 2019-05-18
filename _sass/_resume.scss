@@ -38,7 +38,7 @@ dd {
 
 
 .publications{
-   color:  $bright-blue;
+   //color:  $bright-blue;
 }
 
 .publications b{
@@ -62,7 +62,80 @@ dd {
 }
 
 
+//Overall formatting
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: $title-color;
+}
 
+.cv_desktop_left{
+    display: none;
+}
+
+.cv_mobile_left{
+    display: inline;
+}
+
+
+
+//Publication formatting
+.journal{
+    display: inline;
+    font-style: italic;
+}
+
+.time_period{
+    display: inline;
+    font-weight: bold;
+}
+
+.company{
+    display: inline;
+    font-weight: bold;
+}
+
+.links{
+    display: block;
+    //margin-left: $spacer;
+    margin-top: 10px;
+
+    a{
+        background: $box-bg ;
+        border-radius: 3px;
+        border-width: 1px;
+        border-style: dashed;
+        border-color: $box-border;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    a:hover{
+        background: $box-bg-light ;
+    }
+}
+
+.links_pdf{
+   color: #ff0000;
+
+   &:hover{
+    color: #ff0000;
+   };
+}
+
+.links_bib{
+   color: #ffb600;
+
+   &:hover{
+    color: #ffb600;
+   };
+}
+
+
+
+//Media works backward - THESE SETTINGS ARE for DESKTOP VIEWING
 @media(min-width: 640px) {
 
     .resume_container{
@@ -83,6 +156,19 @@ dd {
     dt:last-child, dd:last-child  {
         margin-bottom: 0px !important;
     }
+
+
+
+    .cv_desktop_left{
+        display: inline;
+    }
+
+    .cv_mobile_left{
+        display: none;
+    }
+
+
+
 
     .mission {
         font-size: 1.8em;
@@ -117,6 +203,17 @@ dd {
         }
     }
 
+    .awards {
+        dt {
+            padding-right: $spacer;
+            width: 70%;
+        }
+        dd {
+            width: 29%;
+        }
+    }
+
+
     .publications {
         dt {
             width: 100%;
@@ -125,13 +222,6 @@ dd {
         dd {
          }
     }
-}
-
-.title {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: $title-color;
 }
 
 

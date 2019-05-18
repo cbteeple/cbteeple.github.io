@@ -34,12 +34,35 @@
         {% for job in site.data.jobs %}
             <div class="resume_container">
                 <dt>
-                    <p class="title">{{ job.title }}</p>
-                    <p class="company"> <a target="_blank" href="{{ job.company_site }}">{{ job.company }}</a></p>
-                    <p class="period">{{ job.period }}</p>
+                    <div class="cv_desktop_left">
+                        <p class="company"> {{ job.company }}</p>
+                        <p class="period">{{ job.period }}</p>
+
+                        {% if job.company_site %}
+                        <div class="links">
+                            <a class="links_bib" target="_blank" href="{{job.company_site}}">Website</a>
+                        </div>
+                        {% endif %}
+                    </div>
                 </dt><!--
                 --><dd>
+                    <p class="title">{{ job.title }}</p>
+                    <div class="cv_mobile_left">
+                        <p class="company">{{ job.company }}</p>
+                        <p class="period">{{ job.period }}</p>
+                    </div>
                     <p>{{ job.description }}</p>
+
+                    <div class="links">
+                        <div class="cv_mobile_left">
+                        {% if job.company_site %}
+                                <a class="links_bib" target="_blank" href="{{job.company_site}}">Website</a>
+                        {% endif %}
+                        </div>
+                        {% if job.link %}
+                            <a target="_blank" href="{{job.link}}">Check out my work!</a>
+                        {% endif %}
+                    </div>
                 </dd>
             </div>
         {% endfor %}
@@ -51,12 +74,20 @@
 <div class="little-box">
 <img class="section-icon" src="img/icons/awards.png">  
 <h3 class="section-title">Awards</h3>
-<dl class="education">
+<dl class="awards">
     {% for award in site.data.awards %}
         <div class="resume_container">
-            <dd>
-                <p class="title"><a target="_blank" href="{{award.link}}">{{ award.name }}</a></p>
+            <dt>
+                <p class="title">{{ award.name }}</p>
                 <p class = "company">{{ award.location }} - {{award.year}}</p>
+            </dt>
+            <dd>
+                <p></p>
+                {% if award.link %}
+                    <div class="links">
+                        <a target="_blank" href="{{award.link}}">Check it out!</a>
+                    </div>
+                {% endif %}
             </dd>
         </div>
     {% endfor %}
@@ -78,6 +109,11 @@
             </dt><!--
             --><dd>
                 <p>{{ teach.description }}</p>
+                {% if teach.link %}
+                    <div class="links">
+                        <a target="_blank" href="{{teach.link}}">Check it out!</a>
+                    </div>
+                {% endif %}
             </dd>
         </div>
     {% endfor %}
@@ -93,9 +129,19 @@
     {% for pub in site.data.publications %}
         <div class="resume_container">
             <dd>
-                <p class="title"><a target="_blank" href="{{pub.link}}">{{ pub.title }}</a></p>
-                <p class="company">{{ pub.names }}</p>
-                <p class="company">{{ pub.journal }} - {{pub.year}}</p>
+                <div class="company">{{ pub.names }},</div>
+                <div class="company"><a target="_blank" href="{{pub.link}}">"{{ pub.title }},"</a></div>
+                <div class="journal">{{ pub.journal }}</div>, <div class="time_period">{{pub.year}}</div>
+                {% if pub.link or pub.pdf_link or pub.bib_link  %}
+                    <div class="links">
+                        {% if pub.link %}<a target="_blank" href="{{pub.link}}">link</a>
+                        {% endif %}
+                        {% if pub.pdf_link %}<a class ="links_pdf" target="_blank" href="{{pub.pdf_link}}">pdf</a>
+                        {% endif %}
+                        {% if pub.bib_link %}<a class="links_bib"  target="_blank" href="{{pub.bib_link}}">bib</a>
+                        {% endif %}
+                        </div>
+                {% endif %}
             </dd>
         </div>
     {% endfor %}

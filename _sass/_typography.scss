@@ -1,7 +1,7 @@
 // @name Typography
 // @description All typography settings and styles
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,900);
 
 // Our variables
 $base-font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -14,16 +14,17 @@ $link-hover: #32B0FF;
 $bright-blue: #bfe7ff;
 $white-color: #ffffff;
 $box-bg: #2a2a2a;
+$box-bg-light: #4a4a4a;
 $box-border: #626262;
 
 $base-font-color: $white-color;
-$title-color: $bright-blue;
+$title-color:  $white-color;
 
 body {
     font-family: $base-font-family, serif;
     font-size: $mobile-font-size;
     color: $base-font-color;
-    line-height: 1.1;
+    line-height: 1.4;
     background: #181818;
 }
 
