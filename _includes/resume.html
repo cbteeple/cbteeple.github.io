@@ -33,8 +33,8 @@
     <dl class="experience">
         {% for job in site.data.jobs %}
             <div class="resume_container">
-                <dt>
-                    <div class="cv_desktop_left">
+                <div class="cv_desktop_left"> <!--THIS IS WHERE ALL OF THE DESKTOP STUFF GOES-->
+                    <dt>
                         <p class="company"> {{ job.company }}</p>
                         <p class="period">{{ job.period }}</p>
 
@@ -43,27 +43,46 @@
                             <a class="links_bib" target="_blank" href="{{job.company_site}}">Website</a>
                         </div>
                         {% endif %}
-                    </div>
-                </dt><!--
-                --><dd>
-                    <p class="title">{{ job.title }}</p>
-                    <div class="cv_mobile_left">
-                        <p class="company">{{ job.company }}</p>
-                        <p class="period">{{ job.period }}</p>
-                    </div>
-                    <p>{{ job.description }}</p>
-
-                    <div class="links">
-                        <div class="cv_mobile_left">
-                        {% if job.company_site %}
-                                <a class="links_bib" target="_blank" href="{{job.company_site}}">Website</a>
-                        {% endif %}
-                        </div>
+                    </dt>
+                    <dd>
+                        <p class="title">{{ job.title }}</p>
+                        <p>{{ job.description }}</p>
+                        <div class="links">
                         {% if job.link %}
                             <a target="_blank" href="{{job.link}}">Check out my work!</a>
                         {% endif %}
-                    </div>
-                </dd>
+                        </div>
+                    </dd>
+
+                </div>
+                <div class="cv_mobile_left">
+                    <dt>             
+                        <p class="title">{{ job.company }}</p>
+                        <p class="company">{{ job.title }}</p>
+                        <p class="period">{{ job.period }}</p>
+                    </dt>
+                    <dd>
+                        <!--<p class="title">{{ job.title }}</p>
+                        <div class="cv_mobile_left">
+                            <p class="company">{{ job.company }}</p>
+                            <p class="period">{{ job.period }}</p>
+                        </div>
+                        -->
+                        <p>{{ job.description }}</p>
+
+                        <div class="links">
+                            {% if job.company_site %}
+                                    <a class="links_bib" target="_blank" href="{{job.company_site}}">Website</a>
+                            {% endif %}
+                            {% if job.link %}
+                                <a target="_blank" href="{{job.link}}">Check out my work!</a>
+                            {% endif %}
+                        </div>
+                    </dd>
+
+
+
+                </div>
             </div>
         {% endfor %}
     </dl>
@@ -128,7 +147,7 @@
     {% for pub in site.data.publications %}
         <div class="resume_container">
             <dd>
-                <div class="company">{{ pub.names }},</div>
+                <div class="pub_names">{{ pub.names }},</div>
                 <div class="company"><a target="_blank" href="{{pub.link}}">"{{ pub.title }},"</a></div>
                 <div class="journal">{{ pub.journal }}</div>, <div class="time_period">{{pub.year}}</div>
                 {% if pub.link or pub.pdf_link or pub.bib_link  %}

@@ -8,14 +8,15 @@
 -   title: 'Undergraduate Research Assisant'
     company: 'Vibration and Acoustics Laboratory: Microsystems, University of Michigan'
     company_site: https://microsystems.engin.umich.edu/
-    description: My work involved studying locomotion of small-scale legged robots.
+    description: My work involved studying locomotion of small-scale legged robots. Our robots used piezoelectric bending actuators to move the legs at very high frequencies.
     period: 2015-2016
     link: https://clarkteeple.weebly.com/research.html
 
 -   title: 'Summer Intern'
     company: 'MIT Lincoln Laboratory'
-    description: worked in the Chemical, Microsystems, and Nanoscale Technology group. I developed control systems and a LabVIEW user interface to automate the operation of a mobile mass spectrometry platform for use in improving canine explosives detection training.
+    description: I worked in the Chemical, Microsystems, and Nanoscale Technology group. I developed control systems and a LabVIEW user interface to automate the operation of a mobile mass spectrometry platform for use in improving canine explosives detection training.
     period: 'Summer 2015'
+    company_site: https://www.ll.mit.edu/
 
 -   title: 'Undergraduate Research Assisant'
     company: 'Lahann Laboratory, University of Michigan'
@@ -27,4 +28,5 @@
 -   title: 'Manufacturing Engineering Intern'
     company: 'Kandu Incorperated'
     description: I designed and built fixtures to aid physically/mentally disabled clients with production tasks. I also analyzed production lines in order to improve product flow and increase efficiency.
-    period: 'Summer 2013'  
+    period: 'Summer 2013'
+    company_site: https://www.linkedin.com/company/kandu-incorporated/  

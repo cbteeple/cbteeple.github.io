@@ -66,6 +66,9 @@ dd {
 }
 
 
+
+
+
 //Overall formatting
 .title {
     margin: 0;
@@ -97,7 +100,12 @@ dd {
 
 .company{
     display: inline;
-    font-weight: bold;
+    font-weight: normal;
+
+}
+
+.pub_names{
+    display: inline;
 }
 
 .links{
@@ -105,6 +113,8 @@ dd {
     margin-top: 10px;
 
     a{
+        display: inline-block;
+        font-size: 1.1em;
         background: $box-bg ;
         border-radius: 3px;
         border-width: 1px;
@@ -147,9 +157,9 @@ dd {
     
     dt {
         display: inline-block;
-        padding-right: 5px;
         margin-bottom: $small_spacer;
         text-align: left;
+        padding-right: 10px;
     }
 
     dd {
@@ -174,6 +184,14 @@ dd {
 
 
 
+    .links{
+        a{
+            font-size: $base-font-size
+        }
+    }
+
+
+
     .mission {
         font-size: 1.8em;
         text-align: center;
@@ -189,12 +207,21 @@ dd {
 
     .experience {
         dt {
-            width: 30%;
+            width: 32%;
             padding-right: $spacer;
+            text-align: right;
         }
 
         dd {
-            width: 70%;
+            padding-left: ($spacer);
+            width: 66%;
+            border-left-color: $box-border;
+            border-left-width: 2px;
+            border-left-style: solid;
+        }
+
+        .company{
+            font-weight: bold;
         }
     }
 
