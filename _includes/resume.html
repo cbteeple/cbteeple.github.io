@@ -7,7 +7,7 @@
 
 
 <div class="little-box">
-<img class="section-icon" src="img/icons/education.png">  
+<img class="section-icon" src="img/icons/education.svg">  
 <h3 class="section-title">Education</h3>
 <dl class="education">
     {% for qualification in site.data.education %}
@@ -28,7 +28,7 @@
 
 
 <div class="little-box">
-    <img class="section-icon" src="img/icons/robot-arm.png">  
+    <img class="section-icon" src="img/icons/robot-arm.svg">  
     <h3 class="section-title">Experience</h3>
     <dl class="experience">
         {% for job in site.data.jobs %}
@@ -40,7 +40,7 @@
 
                         {% if job.company_site %}
                         <div class="links">
-                            <a class="links_bib" target="_blank" href="{{job.company_site}}">Website</a>
+                            <a class="" target="_blank" href="{{job.company_site}}">Website</a>
                         </div>
                         {% endif %}
                     </dt>
@@ -72,7 +72,7 @@
 
                         <div class="links">
                             {% if job.company_site %}
-                                    <a class="links_bib" target="_blank" href="{{job.company_site}}">Website</a>
+                                    <a class="" target="_blank" href="{{job.company_site}}">Website</a>
                             {% endif %}
                             {% if job.link %}
                                 <a target="_blank" href="{{job.link}}">Check out my work!</a>
@@ -91,7 +91,7 @@
 
 
 <div class="little-box">
-<img class="section-icon" src="img/icons/awards.png">  
+<img class="section-icon" src="img/icons/awards.svg">  
 <h3 class="section-title">Awards</h3>
 <dl class="awards">
     {% for award in site.data.awards %}
@@ -115,7 +115,7 @@
 
 
 <div class="little-box">
-<img class="section-icon" src="img/icons/teaching.png">  
+    <img class="section-icon" src="img/icons/teaching_p.svg"> 
 <h3 class="section-title">Teaching</h3>
 <dl class="education">
     {% for teach in site.data.teaching %}
@@ -141,7 +141,7 @@
 
 
 <div class="little-box">
-<img class="section-icon" src="img/icons/publications.png">  
+<img class="section-icon" src="img/icons/publications.svg">  
 <h3 class="section-title">Publications</h3>
 <dl class="publications">
     {% for pub in site.data.publications %}

@@ -49,7 +49,7 @@ dd {
 
 
 .mission{
-    color: $bright-blue;
+    color: $accent-color;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
@@ -115,11 +115,11 @@ dd {
     a{
         display: inline-block;
         font-size: 1.1em;
-        background: $box-bg ;
-        border-radius: 3px;
+        background: none;
+        border-radius: 2px;
         border-width: 1px;
-        border-style: dashed;
-        border-color: $box-border;
+        border-style: solid;
+        border-color: $box-bg-light;
         padding: 5px;
         padding-left: 10px;
         padding-right: 10px;

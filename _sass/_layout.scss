@@ -31,6 +31,9 @@ $max_page_width : 860px;
     margin-left: auto;
     margin-right: auto;
     width: 50px;
+    height: 50px;
+    fill: $accent-color; 
+    
 }
 
 
@@ -38,6 +41,7 @@ $max_page_width : 860px;
 @media(min-width: 640px) {
     .section-icon{
         width: 75px;
+        height: 75px;
     }
 }
 
@@ -48,14 +52,16 @@ $max_page_width : 860px;
     margin-left: auto;
     margin-right: auto;
     width: 32px;
+    height: 32px;
+    fill: $accent-color;
 }
 
 
 .social-section{
     border-radius: 3px;
     border-width: 1px;
-    border-style: dashed;
-    border-color: $box-border;
+    border-style: solid;
+    border-color: $box-bg-light;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -68,7 +74,7 @@ $max_page_width : 860px;
     transition: all 0.2s;
     &:hover{
         //transform: scale(1.05);
-        background: $box-bg
+        background: $box-bg-light
     };
     &:focus{
         //transform: scale(1.05);
@@ -101,7 +107,7 @@ a.social-link {
 
 
 .section-title {
-    color: $bright-blue;
+    color: $title-color;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: ($spacer * 2);
