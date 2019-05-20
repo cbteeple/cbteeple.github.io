@@ -6,15 +6,20 @@
 // Our variables
 $base-font-family: "Lato", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
+$base-transition-time: 0.2s;
 
 $mobile-font-size:   14px;
-$link-color: #32B0FF;
-$link-hover: #32B0FF;
-//$link-hover: #2581BA;
-$bright-blue: #bfe7ff;
+
+$bright-blue: #A5DEFF;
 $vermillion-color: #F24333;
 $orange-yellow: #E98A15;
 $white-color: #ffffff;
+
+
+$link-color: #32B0FF;
+$link-hover: $bright-blue;
+//$link-hover: #2581BA;
+
 $box-bg: #2a2a2a;
 $box-bg-light: #4a4a4a;
 $box-bg-med:  #323232;
