@@ -74,7 +74,13 @@ $max_page_width : 860px;
     transition: all 0.2s;
     &:hover{
         //transform: scale(1.05);
-        background: $box-bg-light
+        background: $box-bg-light;
+        border-color: $box-border;
+
+        .social-icon{
+            transform: translate();
+        }
+
     };
     &:focus{
         //transform: scale(1.05);
@@ -99,7 +105,7 @@ a.social-link {
     text-decoration: none;
 
     &:hover{
-        text-decoration: underline;
+        text-decoration: none;
     };
 }
 
