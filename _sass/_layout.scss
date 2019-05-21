@@ -29,23 +29,23 @@ $max_page_width : 860px;
 }
 
 
-.little-box:hover{
-    .section-icon{
-        fill: $white-color; 
-    }
-}
-
+//.little-box:hover{
+    //.section-icon{
+    //    fill: $white-color;
+    // }
+//}
 
 
 .section-icon{
     display: block;
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
     width: 50px;
     height: 50px;
     fill: $accent-color; 
-    -webkit-transition: all $base-transition-time;
-    transition: all $base-transition-time;
+    -webkit-transition: all 3s;
+    transition: all 3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
     
 }
 
@@ -60,6 +60,17 @@ $max_page_width : 860px;
 
 
 
+
+
+
+
+//the social icons
+
+
+
+
+
+
 .social-icon{
     display: block;
     margin-left: auto;
@@ -69,6 +80,7 @@ $max_page_width : 860px;
     fill: $accent-color;
     -webkit-transition: all $base-transition-time;
     transition: all $base-transition-time;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 
@@ -82,14 +94,17 @@ $max_page_width : 860px;
     padding-left: 10px;
     padding-right: 10px;
 
-
-    //padding: ($small_spacer);
     display: inline-block;
     text-align: center;
+    text-decoration: none;
+
+
+
     &:hover{
-        //transform: scale(1.05);
         background: $box-bg-light;
         border-color: $box-border;
+        text-decoration: none;
+        color: $white-color;
 
         .social-icon{
             transform: translate(0,-10%);
@@ -97,35 +112,15 @@ $max_page_width : 860px;
         }
 
     };
-    &:focus{
-        //transform: scale(1.05);
-    };
-    &:active{
-        //-webkit-transition: all $base-transition-time;
-        //transition: all $base-transition-time;
-        //transform: scale(2.0);
-        //opacity: 0.0;
-    }
 }
 
 
 
 
 
+//////////////////////////////////////
 
 
-a.social-link {
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    webkit-transition: all $base-transition-time;
-    transition: all $base-transition-time;
-
-    &:hover{
-        text-decoration: none;
-        color: $white-color;
-    };
-}
 
 
 
