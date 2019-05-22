@@ -118,7 +118,7 @@ dd {
     a{
         display: inline-block;
         font-size: 1.1em;
-        background: none;
+        background: #353535;
         border-radius: 20px;
         border-width: 1px;
         border-style: solid;
@@ -156,8 +156,8 @@ dd {
     display: inline-block;
     margin-left: auto; 
     margin-right: auto;
-    width: 20px;
-    height: 20px;
+    //width: 20px;
+    //height: 20px;
     font-size:1.3em;
     fill: $link-color;
     top: 2px;
