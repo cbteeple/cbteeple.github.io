@@ -14,7 +14,8 @@
             <div class="social">
                 {% if site.email_address %}
                 <a class="social-section" href="http://{{ site.site_address }}">
-                        <img class=social-icon src="img/icons/web.svg">
+                        <span class="fa fa-globe-americas social-icon"></span>
+                        <!--<img class=social-icon src="img/icons/web.svg"> -->
                             Website
                 </a>
                 
@@ -22,7 +23,7 @@
 
                 {% if site.github_username %}
                 <a class="social-section" href="http://github.com/{{ site.github_username }}" target="_blank">
-                            <img class=social-icon src="img/icons/github.svg">
+                            <i class="fab fa-github social-icon"></i>
                             GitHub
                 </a>
                 {% endif %}
@@ -33,14 +34,14 @@
 
                 {% if site.linkedin_username %}
                 <a class="social-section" href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-                            <img class=social-icon src="img/icons/linkedin.svg">
+                            <i class="fab fa-linkedin social-icon"></i>
                             LinkedIn
                 </a>
                 {% endif %}
 
                 {% if site.email_address %}
                 <a class="social-section" href="mailto:{{ site.email_address }}" target="_blank">
-                            <img class=social-icon src="img/icons/email.svg">
+                            <i class="fas fa-envelope social-icon"></i>
                             Email
                 </a>
                 {% endif %}

@@ -40,7 +40,8 @@
 
                         {% if job.company_site %}
                         <div class="links">
-                            <a class="" target="_blank" href="{{job.company_site}}">Website</a>
+                            <a class="links-grey" target="_blank" href="{{job.company_site}}">
+                            <i class="fa fa-globe-americas links-icon"></i> Website</a>
                         </div>
                         {% endif %}
                     </dt>
@@ -49,7 +50,8 @@
                         <p>{{ job.description }}</p>
                         <div class="links">
                         {% if job.link %}
-                            <a target="_blank" href="{{job.link}}">Check out my work!</a>
+                            <a target="_blank" href="{{job.link}}">
+                                <i class="fa fa-globe-americas links-icon"></i> Check out my work!</a>
                         {% endif %}
                         </div>
                     </dd>
@@ -72,10 +74,12 @@
 
                         <div class="links">
                             {% if job.company_site %}
-                                    <a class="" target="_blank" href="{{job.company_site}}">Website</a>
+                                    <a class="links-grey" target="_blank" href="{{job.company_site}}">
+                                    <i class="fa fa-globe-americas links-icon"></i> Website</a>
                             {% endif %}
                             {% if job.link %}
-                                <a target="_blank" href="{{job.link}}">Check out my work!</a>
+                                <a target="_blank" href="{{job.link}}">
+                                <i class="fa fa-globe-americas links-icon"></i> Check out my work!</a>
                             {% endif %}
                         </div>
                     </dd>
@@ -104,7 +108,8 @@
                 <p></p>
                 {% if award.link %}
                     <div class="links">
-                        <a target="_blank" href="{{award.link}}">Check it out!</a>
+                        <a target="_blank" href="{{award.link}}">
+                        <i class="fa fa-globe-americas links-icon"></i> Check it out!</a>
                     </div>
                 {% endif %}
             </dd>
@@ -129,7 +134,8 @@
                 <p>{{ teach.description }}</p>
                 {% if teach.link %}
                     <div class="links">
-                        <a target="_blank" href="{{teach.link}}">Check it out!</a>
+                        <a target="_blank" href="{{teach.link}}">
+                        <i class="fa fa-globe-americas links-icon"></i> Check it out!</a>
                     </div>
                 {% endif %}
             </dd>
@@ -152,11 +158,17 @@
                 <div class="journal">{{ pub.journal }}</div>, <div class="time_period">{{pub.year}}</div>
                 {% if pub.link or pub.pdf_link or pub.bib_link  %}
                     <div class="links">
-                        {% if pub.link %}<a target="_blank" href="{{pub.link}}">link</a>
+                        {% if pub.link %}<a target="_blank" href="{{pub.link}}">
+                            <i class="fa fa-globe-americas links-icon"></i> link
+                        </a>
                         {% endif %}
-                        {% if pub.pdf_link %}<a class ="links_pdf" target="_blank" href="{{pub.pdf_link}}">pdf</a>
+                        {% if pub.pdf_link %}<a class ="links_pdf" target="_blank" href="{{pub.pdf_link}}">
+                             <i class="far fa-file-pdf links-icon"></i> pdf
+                            </a>
                         {% endif %}
-                        {% if pub.bib_link %}<a class="links_bib"  target="_blank" href="{{pub.bib_link}}">bib</a>
+                        {% if pub.bib_link %}<a class="links_bib"  target="_blank" href="{{pub.bib_link}}">
+                        <i class="fa fa-quote-right links-icon"></i> bib
+                    </a>
                         {% endif %}
                         </div>
                 {% endif %}

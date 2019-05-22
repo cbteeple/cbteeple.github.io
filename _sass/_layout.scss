@@ -78,6 +78,8 @@ $max_page_width : 860px;
     width: 32px;
     height: 32px;
     fill: $accent-color;
+    color:$accent-color;
+    font-size:32px;
     -webkit-transition: all $base-transition-time;
     transition: all $base-transition-time;
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -109,6 +111,7 @@ $max_page_width : 860px;
         .social-icon{
             transform: translate(0,-10%);
             fill: $white-color ;
+            color:$white-color;
         }
 
     };

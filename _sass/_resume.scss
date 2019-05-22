@@ -8,7 +8,9 @@
 .resume_container{
     display: block;
     margin-bottom: $big_spacer;
+
 }
+
 
 
 
@@ -121,18 +123,25 @@ dd {
         border-width: 1px;
         border-style: solid;
         border-color: $box-bg-light;
-        padding: 3px;
+        padding: 4px;
         padding-left: 10px;
         padding-right: 10px;
-        margin-right: 10px;
+        margin-right: 5px;
+        -webkit-transition: all $base-transition-time;
+    transition: all $base-transition-time;
 
     }
     a:hover{
         background: $box-bg-light ;
         border-color: $box-border;
         text-decoration: none;
+
+        .links-icon{
+            fill: $link-hover;
+        };
     }
 }
+
 
 .links_pdf{
    color: #ff0000;
@@ -142,6 +151,21 @@ dd {
    };
 }
 
+
+.links-icon{
+    display: inline-block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+    font-size:1.3em;
+    fill: $link-color;
+    top: 2px;
+    position: relative;
+    padding-right: 2px;
+}
+
+
 .links_bib{
    color: #ffb600;
 
@@ -150,6 +174,14 @@ dd {
    };
 }
 
+
+.links-grey{
+    color: #919191;
+
+   &:hover{
+    color: #cccccc;
+   };
+}
 
 
 //Media works backward - THESE SETTINGS ARE for DESKTOP VIEWING
