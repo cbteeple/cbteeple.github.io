@@ -1,9 +1,58 @@
 <script type="text/javascript">
+
+
+$(function() {
+	$("#darkmode").change(function(){
+		console.log("darkmode switch clicked")
+	    if($(this).is(":checked")) {
+	        $('.little-box').removeClass('light-box');
+	        $('body').removeClass('light-body');
+	        $('.mission').removeClass('light-mission');
+	        $('.links').removeClass('light-links');
+	        $('a').removeClass('light-a');
+	        $('.social-section').removeClass('light-social');
+	        //removeAll('a','light-a')
+	        rmAll('.section-icon', 'light-section-icon');
+	        console.log("dark mode");
+	    } else {
+	        $('.little-box').addClass('light-box');
+	        $('body').addClass('light-body');
+	        $('.mission').addClass('light-mission');
+	        $('.links').addClass('light-links');
+	        $('a').addClass('light-a');
+	        $('.social-section').addClass('light-social');
+	        addAll('.section-icon', 'light-section-icon');
+	        console.log("light mode");
+	    }
+	});
+});
+
+
+
+function addAll(item, classToAdd){
+	$(item).each(function(){
+		this.classList.add(classToAdd)
+	});
+}
+
+function rmAll(item, classToRm){
+	$(item).each(function(){
+		this.classList.remove(classToRm)
+	});
+}
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
 	/*
 	 * Replace all SVG images with inline SVG
 	   - copied from Bloggerschmidt (https://gist.github.com/Bloggerschmidt), modified according to some useful comments
 	 */
-	$( document ).ready( readyFn );
+	$( document ).ready(readyFn	);
 
 	$(window).on('load', function() {
 	   $(".load_hider").css('transform', 'translate(0, 0px)');
@@ -13,6 +62,8 @@
 	 
 
 	function readyFn( jQuery ) {
+
+
 	jQuery('img').filter(function() {
 	        return this.src.match(/.*\.svg$/);
 	    }).each(function(){
@@ -62,3 +113,5 @@
 	}
 
 </script>
+
+

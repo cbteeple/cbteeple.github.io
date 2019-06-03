@@ -22,7 +22,7 @@ header {
         display: inline-block;
         vertical-align: middle;
         margin-right: (2*$spacer);
-        border-right: solid thin #222;
+        border-right: solid thin $box-bg;
     }
 }
 

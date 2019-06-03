@@ -12,13 +12,18 @@ $mobile-font-size:   14px;
 
 $bright-blue: #A5DEFF;
 $vivid-blue:#32B0FF;
+$vivid-blue-dk: #0091ed;
+$dark-blue: #004872;
 $vermillion-color: #F24333;
 $orange-yellow: #E98A15;
 $white-color: #ffffff;
 
 
+
+
 $link-color: $vivid-blue;
 $link-hover: $bright-blue;
+
 //$link-hover: #2581BA;
 
 $box-bg: #2a2a2a;
@@ -26,6 +31,21 @@ $box-bg-light: #4a4a4a;
 $box-bg-med:  #323232;
 $box-bg-dark: #202020;
 $box-border: #626262;
+
+
+
+$lm-box-bg: #ededed;
+$lm-box-bg-light: #dddddd;
+$lm-box-bg-med:  #323232;
+$lm-box-bg-dark: #202020;
+$lm-box-border: #bbbbbb;
+$lm-font-color: #000000;
+$lm-accent-color: $dark-blue;
+$lm-link-hover: $dark-blue;
+$lm-link-color: $vivid-blue-dk;
+
+
+
 
 $base-font-color: $white-color;
 $title-color:  $white-color;
@@ -37,7 +57,15 @@ body {
     color: $base-font-color;
     line-height: 1.4;
     background: #181818;
+
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
     
+}
+
+.light-body {
+    background: #fff;
+    color: $lm-font-color;
 }
 
 .load_hider{
@@ -54,3 +82,9 @@ body {
 		font-size: $base-font-size;
 	}
 }
+
+
+
+
+
+
