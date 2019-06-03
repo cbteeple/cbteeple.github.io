@@ -14,7 +14,7 @@ $border_width: 1px;
   height: $slider_diameter+ 2*$slider_padding + 2*$border_width;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -28,8 +28,7 @@ $border_width: 1px;
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  @include transition($base-transition-time);
 
   border-color: $lm-box-border;
   border-width: $border_width;
@@ -44,8 +43,7 @@ $border_width: 1px;
   left: $slider_padding;
   bottom: $slider_padding;
   background-color: $lm-accent-color;
-  -webkit-transition: .2s;
-  transition: .2s;
+  @include transition($base-transition-time);
 }
 
 input:checked + .slider {
