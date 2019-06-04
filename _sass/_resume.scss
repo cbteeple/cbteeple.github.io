@@ -183,7 +183,7 @@ dd {
 
 
 //Media works backward - THESE SETTINGS ARE for DESKTOP VIEWING
-@media(min-width: 640px) {
+@media(min-width: $base-mobile-width) {
 
     .resume_container{
         margin-bottom: $big_spacer;
