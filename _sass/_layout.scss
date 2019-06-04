@@ -185,6 +185,7 @@ body {
     .mission {@include light_transition(color)}
     .mission em {@include light_transition(color)}
     .links a {@include light_transition(background, border, color)}
+    .footer{@include light_transition(border)}
 }
 
 
@@ -200,6 +201,13 @@ body.light-mode {
     .bg_overlay{
         opacity: 0.20;
     }
+
+
+    .footer {
+        border-top-color: $lm-box-border;
+    }
+
+
 
     .little-box {
         background-color: $lm-box-bg;
@@ -223,6 +231,13 @@ body.light-mode {
 
         em{
             color:$lm-link-color;
+        }
+    }
+
+
+    .experience {
+        dd {
+            border-left-color: $lm-box-border;
         }
     }
 
