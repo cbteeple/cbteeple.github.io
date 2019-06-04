@@ -23,17 +23,8 @@ $max_page_width : 860px;
     border-color: $box-border;
     border-width: 1px;
     margin-bottom: $big_spacer;
-
-    -webkit-transition: all $base-transition-time;
-    transition: all $base-transition-time;
 }
 
-
-
-.light-box{
-    background-color: $lm-box-bg;
-    border-color: $lm-box-border;
-}
 
 
 //.little-box:hover{
@@ -45,17 +36,12 @@ $max_page_width : 860px;
 
 .section-icon{
     display: block;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     width: 50px;
     height: 50px;
-    fill: $accent-color; 
-    
-}
+    fill: $accent-color;
 
-
-.light-section-icon{
-    fill: $lm-accent-color; 
 }
 
 
@@ -89,9 +75,6 @@ $max_page_width : 860px;
     fill: $accent-color;
     color:$accent-color;
     font-size:32px;
-    -webkit-transition: all $base-transition-time;
-    transition: all $base-transition-time;
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 
@@ -128,37 +111,7 @@ $max_page_width : 860px;
 }
 
 
-.light-social{
-    border-color: $lm-box-bg-light;
-    background: $lm-box-bg;
-
-    .social-icon{
-            fill: $lm-link-color;
-            color: $lm-link-color;
-        }
-
-
-    &:hover{
-        background: $lm-box-bg-light;
-        border-color: $lm-box-border;
-        color: $lm-accent-color;
-
-        .social-icon{
-            fill: $lm-accent-color ;
-            color:$lm-accent-color; 
-        }
-    }
-}
-
-
-
-
 //////////////////////////////////////
-
-
-
-
-
 
 .section-title {
     text-transform: uppercase;
@@ -185,8 +138,6 @@ a {
     color: $link-color;
     font-weight: bold;
     text-decoration: none;
-    -webkit-transition: all $base-transition-time;
-    transition: all $base-transition-time;
 
     &:hover {
         color: $link-hover;
@@ -194,11 +145,102 @@ a {
     }
 }
 
-.light-a {
-    color: $lm-link-color;
-    &:hover {
-        color: $lm-link-hover;
-    }
 
+// CENTRALIZED LIGHT MODE
+
+body {
+    @include light_transition(color, background-color);
+    .little-box {@include light_transition(background-color, border-color)}
+    .section-icon {@include light_transition(fill)}
+    .social-section {@include light_transition(border-color, background, color);
+        .social-icon{@include light_transition(fill, color, transform)}
+    }
+    a {@include light_transition(color)}
+    .mission {@include light_transition(color)}
+    .links a {@include light_transition(background, border, color)}
 }
 
+body.light-mode {
+    background: #fff;
+    color: $lm-font-color;
+
+    .little-box {
+        background-color: $lm-box-bg;
+        border-color: $lm-box-border;
+    }
+
+    .section-icon {
+        fill: $lm-accent-color;
+    }
+
+    a {
+        color: $lm-link-color;
+        &:hover {
+            color: $lm-link-hover;
+        }
+
+    }
+
+    .mission {
+        color: $lm-accent-color;
+    }
+
+    .social-section {
+        border-color: $lm-box-bg-light;
+        background: $lm-box-bg;
+
+        .social-icon {
+                fill: $lm-link-color;
+                color: $lm-link-color;
+            }
+
+        &:hover {
+            background: $lm-box-bg-light;
+            border-color: $lm-box-border;
+            color: $lm-accent-color;
+
+            .social-icon{
+                fill: $lm-accent-color ;
+                color:$lm-accent-color;
+            }
+        }
+    }
+
+    .links {
+        a {
+            border-color: $lm-box-bg-light;
+        }
+
+        a:hover {
+            background: $lm-box-bg-light ;
+            border-color: $lm-box-border;
+
+            .links-icon{
+                fill: $lm-link-hover;
+            };
+        }
+
+
+        .links_pdf {
+            color: #ff0000;
+            &:hover{
+                color: #870000;
+            }
+        }
+
+        .links_bib {
+            color: #ffb600;
+            &:hover{
+                color: #e09d00;
+            }
+        }
+
+        .links-grey {
+            color: #9e9e9e;
+
+            &:hover{
+                color: #4f4f4f;
+            };
+        }
+    }
+}
