@@ -149,7 +149,23 @@ a {
 // CENTRALIZED LIGHT MODE
 
 body {
-    @include light_transition(color, background-color);
+
+    .bg_overlay{
+        background-image: url('/img/blue_drawing.jpg');
+
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.15;
+        z-index: -1;
+    }
+
+    @include light_transition(color, background-color, background-image, background-repeat, font-weight);
     .little-box {@include light_transition(background-color, border-color)}
     .section-icon {@include light_transition(fill)}
     .social-section {@include light_transition(border-color, background, color);
@@ -161,8 +177,15 @@ body {
 }
 
 body.light-mode {
-    background: #fff;
+    background-color: $lm-bg;
+    background-image: none;
+    background-repeat: repeat;
     color: $lm-font-color;
+    font-weight: 400;
+
+    .bg_overlay{
+        opacity: 0.25;
+    }
 
     .little-box {
         background-color: $lm-box-bg;
