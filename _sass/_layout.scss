@@ -152,15 +152,15 @@ a {
 .bg_overlay{
     background-image: url('/img/blue_drawing.jpg');
 
-    filter: grayscale(80%);
-    -webkit-filter: grayscale(80%);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     background-size: 300%;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.25;
+    opacity: 0.15;
     z-index: -1;
 }
 
@@ -202,10 +202,6 @@ body.light-mode {
         opacity: 0.20;
     }
 
-
-    .footer {
-        border-top-color: $lm-box-border;
-    }
 
 
 
