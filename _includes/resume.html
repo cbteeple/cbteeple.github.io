@@ -27,6 +27,7 @@
 
 
 
+
 <div class="little-box">
     <img class="section-icon" src="img/icons/robot-arm.svg">  
     <h3 class="section-title">Experience</h3>
@@ -95,8 +96,34 @@
 
 
 <div class="little-box">
+    <img class="section-icon" src="img/icons/leadership.svg"> 
+<h3 class="section-title">Leadership</h3>
+<dl class="education">
+    {% for teach in site.data.leadership %}
+        <div class="resume_container">
+            <dt>
+                <p class="title">{{ teach.title }}</p>
+                <p class="company">{{ teach.organization }}, {{ teach.location }}</p>
+                <p class="period">{{ teach.period }}</p>
+            </dt><!--
+            --><dd>
+                <p>{{ teach.description }}</p>
+                {% if teach.link %}
+                    <div class="links">
+                        <a target="_blank" href="{{teach.link}}">
+                        <i class="fa fa-globe-americas links-icon"></i> Check it out!</a>
+                    </div>
+                {% endif %}
+            </dd>
+        </div>
+    {% endfor %}
+</dl>
+</div>
+
+
+<div class="little-box">
 <img class="section-icon" src="img/icons/awards.svg">  
-<h3 class="section-title">Awards</h3>
+<h3 class="section-title">Awards & Honors</h3>
 <dl class="awards">
     {% for award in site.data.awards %}
         <div class="resume_container">
@@ -117,6 +144,8 @@
     {% endfor %}
 </dl>
 </div>
+
+
 
 
 <div class="little-box">

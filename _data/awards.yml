@@ -1,9 +1,19 @@
--   name: Bok Center Excellence in Teaching Award
-    link: https://bokcenter.harvard.edu/teaching-awards
-    location: Harvard University
-    year: '2019'
+- name: Bok Center Excellence in Teaching Award
+  link: https://bokcenter.harvard.edu/teaching-awards
+  location: Harvard University
+  year: '2019'
 
--   name: NSF Graduate Research Fellowship
-    link: https://www.nsfgrfp.org/
-    location: Harvard University
-    year: '2017-2020'
+- name: NSF Graduate Research Fellowship
+  link: https://www.nsfgrfp.org/
+  location: Harvard University
+  year: '2017-2020'
+
+- name: RISE Best Paper Award
+  link: https://me.engin.umich.edu/academics/undergrad/rise/beyond-rise
+  location: Research, Innovation, Service and Entrepreneurship (RISE), University of Michigan
+  year: '2016' 
+
+- name: Active Member of Tau Beta Pi Engineering Honor Society
+  link: https://tbp.engin.umich.edu
+  location: University of Michigan
+  year: '2014-2016' 
