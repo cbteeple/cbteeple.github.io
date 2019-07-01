@@ -289,12 +289,12 @@ body.light-mode {
 
     .links {
         a {
-            background: $lm-box-bg-light ;
+            background: $lm-box-bg ;
             border-color: $lm-box-bg-med;
         }
 
         a:hover {
-            background: $lm-box-bg ;
+            background: $lm-box-bg-light ;
             border-color: $lm-box-border;
 
             .links-icon{
