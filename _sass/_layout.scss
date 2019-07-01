@@ -14,8 +14,6 @@ $max_page_width : 860px;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: $big_spacer;
-    background: none;
-    border-radius: 0px;
 }
 
 
@@ -71,17 +69,15 @@ $max_page_width : 860px;
     }
 
     .container{
-        border-radius: 10px;
         padding-left: $big_spacer;
         padding-right: $big_spacer;
-        background: $box-bg-darker;
     }
 
     .little-box{
-        border-radius: 5px;
-        border-style: Dashed;
-        border-color: $box-border;
-        border-width: 1px;
+        //border-radius: 5px;
+        //border-style: Dashed;
+        //border-color: $box-border;
+        border-width: 0px;
         margin-bottom: $big_spacer;
     }
 }
@@ -219,7 +215,6 @@ body {
     .mission em {@include light_transition(color)}
     .links a {@include light_transition(background, border, color)}
     .footer{@include light_transition(border)}
-    .container{@include light_transition(background)}
 }
 
 
@@ -236,10 +231,6 @@ body.light-mode {
         opacity: 0.20;
     }
 
-
-    .container{
-        background: #E5E5E5;
-    }
 
 
     .little-box {
