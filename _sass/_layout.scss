@@ -8,6 +8,18 @@ $big_spacer: 40px;
 $max_page_width : 860px;
 
 .container {
+    max-width: $max_page_width+$big_spacer;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: $big_spacer;
+    background: none;
+    border-radius: 0px;
+}
+
+
+.head-container {
     max-width: $max_page_width;
     margin: 0 auto;
     padding: 0 $spacer;
@@ -17,12 +29,17 @@ $max_page_width : 860px;
 .little-box{
     padding: 20px;
     padding-bottom: 20px;
-    border-radius: 5px;
     background-color: $box-bg;
+    border-radius: 0px;
     border-style: Dashed;
     border-color: $box-border;
-    border-width: 1px;
-    margin-bottom: $big_spacer;
+    border-width: 0px;
+    margin-bottom: $small_spacer;
+}
+
+
+.little-box:last-child{
+    margin-bottom: 0px;
 }
 
 
@@ -46,10 +63,26 @@ $max_page_width : 860px;
 
 
 
+//All the settings for full-width
 @media(min-width: $base-mobile-width) {
     .section-icon{
         width: 75px;
         height: 75px;
+    }
+
+    .container{
+        border-radius: 10px;
+        padding-left: $big_spacer;
+        padding-right: $big_spacer;
+        background: $box-bg-darker;
+    }
+
+    .little-box{
+        border-radius: 5px;
+        border-style: Dashed;
+        border-color: $box-border;
+        border-width: 1px;
+        margin-bottom: $big_spacer;
     }
 }
 
@@ -186,6 +219,7 @@ body {
     .mission em {@include light_transition(color)}
     .links a {@include light_transition(background, border, color)}
     .footer{@include light_transition(border)}
+    .container{@include light_transition(background)}
 }
 
 
@@ -203,6 +237,9 @@ body.light-mode {
     }
 
 
+    .container{
+        background: #E5E5E5;
+    }
 
 
     .little-box {
