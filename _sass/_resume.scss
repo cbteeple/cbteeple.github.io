@@ -5,6 +5,9 @@
 
 
 
+
+
+
 .resume_container{
     display: block;
     margin-bottom: $big_spacer;
@@ -35,9 +38,19 @@ dd {
     margin-left: 0px;
 }
 
-.publications dd{
-    margin-left: 0px;
+
+
+.publications dt{
+    margin-top: 10px;
+    margin-right: 5px;
 }
+
+
+.publications dd{
+    margin-left: 5px;
+}
+
+
 
 
 .publications{
@@ -47,6 +60,13 @@ dd {
 .publications b{
     font-weight: bold;
 }
+
+
+.publications .resume_container{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
@@ -110,6 +130,154 @@ dd {
 .pub_names{
     display: inline;
 }
+
+
+.pub_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden; 
+    padding: 0;
+    display: block;
+}
+
+.tags li {
+    float: left; 
+}
+
+.tag {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: $base-font-color;
+    background: $box-bg-light;
+    border-radius: 3px;
+    display: inline-block;
+    height: 2.0em;
+    line-height: 2.0em;
+    padding: 0 10px 0 15px;
+    position: relative;
+    margin: 10px 10px 0 0;
+    text-decoration: none;
+}
+
+
+.tag::before {
+  background: $box-bg;
+  border-bottom: 1.0em solid transparent;
+  border-right: 0.7em solid $box-bg-light;
+  border-top: 1.0em solid transparent;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+.tag:hover {
+  background-color: $box-border;
+  color: $base-font-color;
+  text-decoration: none;
+}
+
+.tag:hover::before {
+   border-right-color: $box-border; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.tags{
+    display: inline-block;
+    margin-top: 10px;
+
+    a{
+        display: inline-block;
+        font-size: 0.9em;
+        font-weight: normal;
+        color: $base-font-color;
+        background: $box-bg-med;
+        border-radius: 20px;
+        border-style: none;
+        padding: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 5px;
+
+    }
+    a:hover{
+        background: $box-bg-light ;
+        border-color: $box-border;
+        text-decoration: none;
+    }
+    
+}
+*/
+
+
+
+
+.publications  .links{
+    display: grid;
+    margin-top: 0;
+    justify-content: center;
+
+    a{
+        display: flex;
+        font-size: 1.1em;
+        background: none;
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin:0;
+        justify-content: center;
+
+    }
+    a:hover{
+        background: $box-bg-light ;
+        text-decoration: none;
+
+        .links-icon{
+            fill: $link-hover;
+        };
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .links{
     display: block;

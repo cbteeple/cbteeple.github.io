@@ -4,13 +4,16 @@ $slider_padding: 2px;
 $slider_width: 20px;
 $border_width: 1px;
 
+$overall_width: $slider_width + $slider_diameter + 2*$slider_padding + 2*$border_width;
+
 
 // Toggle switches
 .switch {
   position: relative;
-  display: inline-block;
-  margin-left: 5px;
-  width: $slider_width + $slider_diameter + 2*$slider_padding + 2*$border_width;
+  display: block;
+  margin-left: 0px;
+  margin-right:0px;
+  width: $overall_width+20px;
   height: $slider_diameter+ 2*$slider_padding + 2*$border_width;
 }
 
@@ -24,8 +27,7 @@ $border_width: 1px;
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 0;
-  right: 0;
+  width: $overall_width;
   bottom: 0;
   background-color: #ccc;
   @include transition($base-transition-time);
@@ -75,15 +77,27 @@ input:checked + .slider:before {
 
 
 .darkmode-box{
-  right: 20px;
-  top: 10px;
-  display: block;
   position: absolute;
+  top:0;
+  right:0;
+  padding:10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  z-index:1000;
+  background: none;
+  display: grid;
+}
+
+.darkmode-label{
+  text-align: center;
 }
 
 
 @media(min-width: 640px) {
   .darkmode-box{
-    right: 40px;
+    position: fixed;
+    padding-right: 10px;
+    background: $box-bg-alpha;
+    border-bottom-left-radius: 5px;
   }
 }

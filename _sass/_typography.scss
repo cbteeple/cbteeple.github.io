@@ -87,9 +87,8 @@ body {
 
 .load_hider{
     opacity: 0.0;
-    @include transition(transform, $base-transition-time);
     @include transition(opacity, $base-transition-time);
-    transform: translate(0, 0px);
+
 }
 
 
@@ -100,10 +99,74 @@ body {
 	body{
 		font-size: $base-font-size;
 	}
+
+    .nav-bar{
+        .section-icon{
+            width: 24px ;
+            height: 24px;
+        }
+    }
+}
+
+
+@media(min-width: 1100px) {
+    .nav-bar{
+        .section-icon{
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
 }
 
 
 
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+    scroll-behavior: smooth;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
 
 
 
+.nav-bar {
+    margin-top: 20px;
+
+}
+
+.nav-bar .section-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24px;
+    height: 24px;
+}
+
+.nav-bar a {
+    display: flex;
+    padding:5px;
+
+    .section-icon{
+        fill: $link-color;
+    }
+}
+
+.nav-bar a:hover{
+
+    .section-icon{
+        fill: $link-hover;
+    }
+}
+
+.nav-bar li{
+    .current{
+        background: $box-bg-light ;
+        color:white;
+
+        .section-icon{
+            fill: white;
+        }
+    }
+}

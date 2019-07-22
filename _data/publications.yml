@@ -5,6 +5,10 @@
     link: https://docs.wixstatic.com/ugd/6070d1_5fb7769a13d64a768f346b6509340e34.pdf
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/teeple2018_iros2018.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/teeple_becker_wood_iros_2018.bib
+    tags:
+      - Grasping
+      - Soft Robots
+      - Deep-Sea
 
 
 -   title: Passive Steering of Miniature Walking Robot Using the Non-Uniformity of Robot Structure
@@ -14,6 +18,9 @@
     link: https://doi.org/10.1109/MARSS.2018.8481167
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/passivesteering.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu_teeple_zhang_oldham_2018.bib
+    tags:
+      - Microrobots
+      - Dynamics
 
 
 -   title: A Dexterous, Glove-Based Teleoperable Low-Power Soft Robotic Arm for Delicate Deep-Sea Biological Exploration
@@ -23,6 +30,10 @@
     link: https://doi.org/10.1038/s41598-018-33138-y
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/phillips2018_scientific_reports.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/phillips_becker_kurumaya_etc_2018.bib
+    tags:
+      - Grasping
+      - Soft Robots
+      - Deep-Sea
 
 
 -   title: '3D Jet Writing: Functional Microtissues Based on Tessellated Scaffold Architectures'
@@ -32,6 +43,9 @@
     link: https://doi.org/10.1002/adma.201707196
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/jordahl_et_al-2018-advanced_materials.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/jordahl2018.bib
+    tags:
+      - Tissue Engineering
+      - Machine Design
 
 
 -   title: 'Design, fabrication, and dynamics of an electromagnetic vertical microactuator for endomicroscopy'
@@ -40,6 +54,10 @@
     year: 2017
     link: https://doi.org/10.1109/AIM.2017.8014200
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/zhang_teeple_choi_kang_rivas_oldham_2017.bib
+    tags:
+      - Microrobots
+      - Dynamics
+
 
 -   title: 'Modeling Legged Microrobot Locomotion Based on Contact Dynamics and Vibration in Multiple Modes and Axes'
     names: ​​J. Qu, <b>C.B. Teeple</b>, and K.R. Oldham
@@ -48,3 +66,6 @@
     link: http://dx.doi.org/10.1115/1.4035959
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu2017_-_asme_-_modeling_legged_microrobot_locomotion.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu_teeple_oldham_2017.bib
+    tags:
+      - Microrobots
+      - Dynamics

@@ -2,6 +2,77 @@ console.log("Custom JS loaded");
 
 
 
+
+
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+
+
+
+$(window).scroll(function(event) {
+    nav_bar();
+
+});
+
+function nav_bar(jQuery){
+
+    var first_one = false;
+  
+  $(".nav-anchor").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true) & !first_one) {
+        $(".nav-item").each( function () {
+            if ($(this).attr('href') == '#'+el.attr('name') ){
+                $(this).addClass("current");
+            }
+        }); 
+        first_one=true;
+    }
+    else {
+        $(".nav-item").each( function () {
+            if ($(this).attr('href') == '#'+el.attr('name') ){
+                $(this).removeClass("current");
+            }
+        }); 
+    }
+  });
+  
+}
+
+
+
+
+//Add Darkmode functionallity
+
+
 $(function () {
     $("#darkmode").change(function () {
         console.log("darkmode switch clicked")
@@ -24,7 +95,6 @@ $(function () {
 $(document).ready(readyFn);
 
 $(window).on('load', function () {
-    $(".load_hider").css('transform', 'translate(0, 0px)');
     $(".load_hider").css('opacity', '1.0');
 
 });
@@ -32,7 +102,7 @@ $(window).on('load', function () {
 
 function readyFn(jQuery) {
 
-
+    // Replace SVG images with inline
     jQuery('img').filter(function () {
         return this.src.match(/.*\.svg$/);
     }).each(function () {
@@ -67,6 +137,9 @@ function readyFn(jQuery) {
         }, 'xml');
 
     });
+
+    nav_bar();
+
 }
 
 
@@ -80,3 +153,10 @@ function removeStyles(el) {
     });
 
 }
+
+
+
+
+
+
+

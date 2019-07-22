@@ -180,6 +180,7 @@ a {
 
 .bg_overlay{
     background-image: url('/img/blue_drawing.jpg');
+    background-repeat: repeat-y;
 
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -204,17 +205,21 @@ a {
 body {
 
     @include light_transition(color, background-color, background-image, background-size, font-weight);
-    .bg_overlay{@include light_transition(background-size, background-image, opacity)}
-    .little-box {@include light_transition(background-color, border-color)}
-    .section-icon {@include light_transition(fill)}
+    .bg_overlay{@include light_transition(background-size, background-image, opacity)};
+    .little-box {@include light_transition(background-color, border-color)};
+    .darkmode-box{@include light_transition(background,fill,color,background)};
+    .current{@include light_transition(background,fill,color,background)};
+    .section-icon {@include light_transition(fill, width)};
     .social-section {@include light_transition(border-color, background, color);
         .social-icon{@include light_transition(fill, color, transform)}
-    }
+    };
     a {@include light_transition(color)}
     .mission {@include light_transition(color)}
     .mission em {@include light_transition(color)}
     .links a {@include light_transition(background, border, color)}
     .footer{@include light_transition(border)}
+    .tag{@include light_transition(background, color, border-color)}
+    .tag:before{@include light_transition(background, color, border-color)}
 }
 
 
@@ -231,6 +236,41 @@ body.light-mode {
         opacity: 0.20;
     }
 
+    .darkmode-box{
+        background: $lm-box-bg-alpha;
+    }
+
+
+
+
+
+    .nav-bar a {
+        display: flex;
+        padding:5px;
+
+        .section-icon{
+            fill: $lm-link-color;
+        }
+    }
+
+    .nav-bar a:hover{
+
+        .section-icon{
+            fill: $lm-link-hover;
+        }
+    }
+
+
+    .nav-bar li{
+        .current{
+            background: $lm-box-bg-light ;
+            color:$lm-accent-color;
+
+            .section-icon{
+                fill: $lm-accent-color;
+            }
+        }
+    }
 
 
     .little-box {
@@ -286,6 +326,27 @@ body.light-mode {
             }
         }
     }
+
+
+    .tag{
+        color: $lm-font-color;
+        background: $lm-box-bg-med;
+    }
+    .tag::before {
+        background: $lm-box-bg;
+        border-right-color: $lm-box-bg-med;
+    }
+
+    .tag:hover {
+      background-color: $lm-box-border;
+      color: $lm-font-color;
+    }
+
+    .tag:hover::before {
+       border-right-color: $lm-box-border; 
+    }
+
+
 
     .links {
         a {
