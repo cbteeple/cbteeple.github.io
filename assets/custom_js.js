@@ -46,11 +46,11 @@ function nav_bar(jQuery){
 
     var first_one = false;
   
-  $(".nav-anchor").each(function(i, el) {
+  $(".nav-anchor, .little-box").each(function(i, el) {
     var el = $(el);
     if (el.visible(true) & !first_one) {
         $(".nav-item").each( function () {
-            if ($(this).attr('href') == '#'+el.attr('name') ){
+            if ($(this).attr('href') == '#'+el.attr('id') ){
                 $(this).addClass("current");
             }
         }); 
@@ -58,7 +58,7 @@ function nav_bar(jQuery){
     }
     else {
         $(".nav-item").each( function () {
-            if ($(this).attr('href') == '#'+el.attr('name') ){
+            if ($(this).attr('href') == '#'+el.attr('id') ){
                 $(this).removeClass("current");
             }
         }); 
