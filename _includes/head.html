@@ -1,3 +1,14 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98839874-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98839874-3');
+</script>
+
+<!-- Load Typical Stuff -->
 <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +20,11 @@
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+<!-- Load Custom Scripts -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Load FontAwesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/solid.js" integrity="sha384-+2/MEhV42Ne5nONkjLVCZFGh5IaEQmfXyvGlsibBiATelTFbVGoLB1sqhczi0hlf" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/regular.js" integrity="sha384-iFYyWQkY/Zvsdq3IIxRJI2FBoXPj6g73ok7rIH3sZGulA7E5PvFqB5BOELomUuyh" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/brands.js" integrity="sha384-GtvEzzhN52RvAD7CnSR7TcPw555abR8NK28tAqa/GgIDk59o0TsaK6FHglLstzCf" crossorigin="anonymous"></script>
