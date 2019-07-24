@@ -101,3 +101,60 @@ input:checked + .slider:before {
     border-bottom-left-radius: 5px;
   }
 }
+
+
+/*TAGS   */
+
+$tag-height: 1.7em;
+
+
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden; 
+    padding: 0;
+    display: block;
+}
+
+.tags li {
+    float: left; 
+}
+
+.tag {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: $base-font-color;
+    background: $box-bg-light;
+    border-radius: 2px;
+    display: inline-block;
+    height: $tag-height;
+    line-height: $tag-height;
+    padding: 0 10px 0 15px;
+    position: relative;
+    margin: 10px 10px 0 0;
+    text-decoration: none;
+}
+
+
+.tag::before {
+  background: $box-bg;
+  border-bottom: $tag-height*0.5 solid transparent;
+  border-right: $tag-height*0.35 solid $box-bg-light;
+  border-top: $tag-height*0.5 solid transparent;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+.tag:hover {
+  background-color: $box-border;
+  color: $base-font-color;
+  text-decoration: none;
+}
+
+.tag:hover::before {
+   border-right-color: $box-border; 
+}

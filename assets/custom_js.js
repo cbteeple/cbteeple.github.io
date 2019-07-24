@@ -1,7 +1,3 @@
-console.log("Custom JS loaded");
-
-
-
 
 
 (function($) {
@@ -75,13 +71,10 @@ function nav_bar(jQuery){
 
 $(function () {
     $("#darkmode").change(function () {
-        console.log("darkmode switch clicked")
         if ($(this).is(":checked")) {
-            console.log("dark mode");
             // ALT: Just set mode on body
             document.body.classList.remove('light-mode');
         } else {
-            console.log("light mode");
             // ALT: Just set mode on body
             document.body.classList.add('light-mode');
         }
@@ -111,7 +104,6 @@ function readyFn(jQuery) {
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');
 
-        console.log(imgURL);
 
         jQuery.get(imgURL, function (data) {
             // Get the SVG tag, ignore the rest
@@ -148,7 +140,6 @@ function removeStyles(el) {
 
     jQuery(el).find('g').each(function () {
         var $g = jQuery(this).find('g');
-        console.log($g);
         $g.removeAttr('style');
     });
 
