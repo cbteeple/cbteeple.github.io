@@ -92,9 +92,6 @@ $max_page_width : 860px;
 
 
 
-
-
-
 .social-icon{
     display: block;
     margin-left: auto;
@@ -210,6 +207,7 @@ body {
     .darkmode-box{@include light_transition(background,fill,color,background)};
     .current{@include light_transition(background,fill,color,background)};
     .section-icon {@include light_transition(fill, width)};
+    .invert-icon {@include light_transition(all)};
     .social-section {@include light_transition(border-color, background, color);
         .social-icon{@include light_transition(fill, color, transform)}
     };
@@ -237,9 +235,14 @@ body.light-mode {
     }
 
     .darkmode-box{
-        background: $lm-box-bg-alpha;
+        background: $lm-box-bg-alpha2;
     }
 
+
+    .invert-icon{
+        fill: $lm-accent-color;
+        color:$lm-accent-color;
+    }
 
 
 
@@ -271,6 +274,8 @@ body.light-mode {
             }
         }
     }
+
+
 
 
     .little-box {
