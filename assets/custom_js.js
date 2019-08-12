@@ -31,6 +31,42 @@
 })(jQuery);
 
 
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    var box = document.getElementById("dkbox")
+
+    style = window.getComputedStyle(box),
+    direction = style.getPropertyValue('flex-direction');
+
+        if (direction == "row"){
+            if (prevScrollpos > currentScrollPos) {
+                box.style.top = "0";
+            } else {
+                box.style.top = "-45px";
+            }
+        }
+        else{
+            box.style.top = "0";
+        }
+
+    prevScrollpos = currentScrollPos;
+}
+
+*/
+
+
+$('#dkbox').hover(
+       function(){
+        $(this).addClass('nav-down')
+        $(this).removeClass('nav-up')
+    },
+       function(){}
+)
+
+
+
 
 
 $(window).scroll(function(event) {
@@ -38,6 +74,8 @@ $(window).scroll(function(event) {
 
 });
 
+
+var prevScrollpos = window.pageYOffset;
 function nav_bar(jQuery){
 
     var first_one = false;
@@ -60,6 +98,28 @@ function nav_bar(jQuery){
         }); 
     }
   });
+
+
+  var currentScrollPos = window.pageYOffset;
+  $("#dkbox").each(function(i, el) {
+    console.log($(this))
+    if ($(this).css("flex-direction") == "row"){
+        if (prevScrollpos > currentScrollPos) {
+            $(this).addClass('nav-down')//$(this).css('top',"0");
+            $(this).removeClass('nav-up')
+        } else {
+            $(this).addClass('nav-up')//$(this).css('top',"-45px");
+            $(this).removeClass('nav-down')
+        }
+    }
+    else{
+        $(this).addClass('nav-down')//$(this).css('top',"0");
+        $(this).removeClass('nav-up')
+    }
+
+
+  });
+  prevScrollpos = currentScrollPos;
   
 }
 
