@@ -205,6 +205,7 @@ body {
     .bg_overlay{@include light_transition(background-size, background-image, opacity)};
     .little-box {@include light_transition(background-color, border-color)};
     .darkmode-box{@include light_transition(background,fill,color,background,top)};
+    .nav-item{@include light_transition(background)};
     .current{@include light_transition(background,fill,color,background)};
     .section-icon {@include light_transition(fill, width)};
     .invert-icon {@include light_transition(all)};
