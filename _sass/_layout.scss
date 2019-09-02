@@ -338,6 +338,12 @@ body.light-mode {
     }
 
 
+
+    .scholar-icon:hover{
+        -webkit-filter: brightness(75%);
+        filter: brightness(75%);
+    }
+
     .tag{
         color: $lm-font-color;
         background: $lm-box-bg-med;
