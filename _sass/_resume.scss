@@ -4,7 +4,20 @@
 
 
 
+.scholar-icon{
+    display:block;
+    position: absolute;
+    right: 0;
+    top:0;
+    width:96px;
+    margin: $spacer/2;
+    transition: $base-transition-time
+}
 
+.scholar-icon:hover{
+    -webkit-filter: brightness(140%);
+    filter: brightness(140%);
+}
 
 
 
@@ -255,6 +268,13 @@ dd {
 
 //Media works backward - THESE SETTINGS ARE for DESKTOP VIEWING
 @media(min-width: $base-mobile-width) {
+
+
+    .scholar-icon{
+        width:128px;
+        margin: $spacer;
+    }
+
 
     .resume_container{
         margin-bottom: $big_spacer;

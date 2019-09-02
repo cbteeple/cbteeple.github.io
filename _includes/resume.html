@@ -108,7 +108,7 @@
                 <p>{{ teach.description }}</p>
                 {% if teach.link %}
                     <div class="links">
-                        <a target="_blank" href="{{teach.link}}">
+                        <a target="_blank" href="{{teach.link}}" >
                         <i class="fa fa-globe-americas links-icon"></i> Check it out!</a>
                     </div>
                 {% endif %}
@@ -173,14 +173,17 @@
 
 
 <div class="little-box" id="publications">
-<img class="section-icon" src="img/icons/publications.svg">  
+<img class="section-icon" src="img/icons/publications.svg">
+<a href="https://scholar.google.com/citations?hl=en&user={{ site.google_scholar_user }}" target="_blank">
+    <img class="scholar-icon" src="img/icons/scholar-icon.png" alt="Google Scholar Icon">
+</a>
 <h3 class="section-title">Publications</h3>
 <dl class="publications">
     {% for pub in site.data.publications %}
         <div class="resume_container">
             <dt>
                 <div class="pub_names">{{ pub.names }},</div>
-                <div class="company"><a target="_blank" href="{{pub.link}}">"{{ pub.title }},"</a></div>
+                <div class="company"><a target="_blank" href="{{pub.link}}" title="View on Journal Website" >"{{ pub.title }},"</a></div>
                 <div class="journal">{{ pub.journal }}</div>, <div class="time_period">{{pub.year}}</div>
                 <div class="pub_info" >
                     <ul class="tags">
@@ -195,15 +198,15 @@
             <dd>
                 {% if pub.link or pub.pdf_link or pub.bib_link  %}
                     <div class="links">
-                        {% if pub.link %}<a target="_blank" href="{{pub.link}}">
+                        {% if pub.link %}<a target="_blank" href="{{pub.link}}"" title="View on Journal Website">
                             <i class="fa fa-globe-americas links-icon"></i>
                         </a>
                         {% endif %}
-                        {% if pub.pdf_link %}<a class ="links_pdf" target="_blank" href="{{pub.pdf_link}}">
+                        {% if pub.pdf_link %}<a class ="links_pdf" target="_blank" href="{{pub.pdf_link}}" title="Get PDF">
                              <i class="far fa-file-pdf links-icon"></i>
                             </a>
                         {% endif %}
-                        {% if pub.bib_link %}<a class="links_bib"  target="_blank" href="{{pub.bib_link}}">
+                        {% if pub.bib_link %}<a class="links_bib"  target="_blank" href="{{pub.bib_link}}" title="Get BibTeX">
                         <i class="fa fa-quote-right links-icon"></i>
                     </a>
                         {% endif %}
