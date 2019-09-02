@@ -5,6 +5,7 @@
     link: https://robotics.sciencemag.org/content/4/33/eaax5425
     pdf_link: papers/sinatra2019.pdf
     bib_link: papers/bib/sinatra2019.bib
+    media_link: https://www.youtube.com/watch?v=p5Y84HKShLo
     tags:
       - Grasping
       - Soft Robots
@@ -45,6 +46,7 @@
     link: https://doi.org/10.1038/s41598-018-33138-y
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/phillips2018_scientific_reports.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/phillips_becker_kurumaya_etc_2018.bib
+    media_link: https://www.youtube.com/watch?v=2tDsYqrbNzA
     tags:
       - Grasping
       - Soft Robots
@@ -58,6 +60,7 @@
     link: https://doi.org/10.1002/adma.201707196
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/jordahl_et_al-2018-advanced_materials.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/jordahl2018.bib
+    media_link: https://biointerfaces.umich.edu/a-team-of-bi-groups-publishes-new-article-on-functional-microtissues/
     tags:
       - Tissue Engineering
       - Machine Design
@@ -81,6 +84,7 @@
     link: http://dx.doi.org/10.1115/1.4035959
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu2017_-_asme_-_modeling_legged_microrobot_locomotion.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu_teeple_oldham_2017.bib
+    media_link: https://youtu.be/hJQbxvO7aXY
     tags:
       - Microrobots
       - Dynamics

@@ -234,6 +234,15 @@ dd {
 }
 
 
+.links_media{
+   color: #aa00ff;
+
+   &:hover{
+    color: #cc66ff;
+   };
+}
+
+
 .links-icon{
     display: inline-block;
     margin-left: auto;

@@ -387,6 +387,14 @@ body.light-mode {
             }
         }
 
+        .links_media {
+            color: #7000a8;
+            &:hover{
+                color: #aa00ff;
+            }
+        }
+
+
         .links_bib {
             color: #e09d00;
             &:hover{
