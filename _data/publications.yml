@@ -3,7 +3,7 @@
     journal: Science Robotics
     year: 2019
     link: https://robotics.sciencemag.org/content/4/33/eaax5425
-    pdf_link: papers/sinatra2019.pdf
+    pdf_link: papers/sinatra2019_ultragentle_soft_gripper.pdf
     bib_link: papers/bib/sinatra2019.bib
     media_link: https://www.youtube.com/watch?v=p5Y84HKShLo
     tags:
@@ -18,8 +18,8 @@
     journal: IEEE International Conference on Intelligent Robots and Systems (IROS)
     year: 2018
     link: https://ieeexplore.ieee.org/abstract/document/8594270
-    pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/teeple2018_iros2018.pdf
-    bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/teeple_becker_wood_iros_2018.bib
+    pdf_link: papers/teeple2018_soft_sensors.pdf
+    bib_link: papers/bib/teeple2018.bib
     tags:
       - Grasping
       - Soft Robots
@@ -32,8 +32,8 @@
     journal: 2018 International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)
     year: 2018
     link: https://doi.org/10.1109/MARSS.2018.8481167
-    pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/passivesteering.pdf
-    bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu_teeple_zhang_oldham_2018.bib
+    pdf_link: papers/qu2018_passive_steering.pdf
+    bib_link: papers/bib/qu2018.bib
     tags:
       - Microrobots
       - Dynamics
@@ -44,8 +44,8 @@
     journal: Scientific Reports
     year: 2018
     link: https://doi.org/10.1038/s41598-018-33138-y
-    pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/phillips2018_scientific_reports.pdf
-    bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/phillips_becker_kurumaya_etc_2018.bib
+    pdf_link: papers/phillips2018_soft_arm.pdf
+    bib_link: papers/bib/phillips2018.bib
     media_link: https://www.youtube.com/watch?v=2tDsYqrbNzA
     tags:
       - Grasping
@@ -58,8 +58,8 @@
     journal: Advanced Materials
     year: 2018
     link: https://doi.org/10.1002/adma.201707196
-    pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/jordahl_et_al-2018-advanced_materials.pdf
-    bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/jordahl2018.bib
+    pdf_link: papers/jordahl2018_jet_writing.pdf
+    bib_link: papers/bib/jordahl2018.bib
     media_link: https://biointerfaces.umich.edu/a-team-of-bi-groups-publishes-new-article-on-functional-microtissues/
     tags:
       - Tissue Engineering
@@ -71,7 +71,7 @@
     journal: IEEE International Conference on Advanced Intelligent Mechatronics (AIM)
     year: 2017
     link: https://doi.org/10.1109/AIM.2017.8014200
-    bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/zhang_teeple_choi_kang_rivas_oldham_2017.bib
+    bib_link: papers/bib/zhang2017.bib
     tags:
       - Microrobots
       - Dynamics
@@ -82,8 +82,8 @@
     journal: Journal of Vibration and Acoustics
     year: 2017
     link: http://dx.doi.org/10.1115/1.4035959
-    pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu2017_-_asme_-_modeling_legged_microrobot_locomotion.pdf
-    bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/qu_teeple_oldham_2017.bib
+    pdf_link: papers/qu2017_modeling.pdf
+    bib_link: papers/bib/qu2017.bib
     media_link: https://youtu.be/hJQbxvO7aXY
     tags:
       - Microrobots
