@@ -40,7 +40,10 @@ header {
 #headshot {
     max-width: 200px;
     max-height: 200px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: $box-border;
+    border-style: solid;
 }
 
 .intro {

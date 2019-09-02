@@ -219,6 +219,8 @@ body {
     .footer{@include light_transition(border)}
     .tag{@include light_transition(background, color, border-color)}
     .tag:before{@include light_transition(background, color, border-color)}
+
+    #headshot{@include light_transition(border)}
 }
 
 
@@ -230,6 +232,7 @@ body.light-mode {
     background-repeat: repeat;
     color: $lm-font-color;
     font-weight: 400;
+
 
     .bg_overlay{
         opacity: 0.20;
@@ -244,8 +247,6 @@ body.light-mode {
         fill: $lm-accent-color;
         color:$lm-accent-color;
     }
-
-
 
 
     .nav-bar a {
@@ -277,7 +278,9 @@ body.light-mode {
     }
 
 
-
+    #headshot{
+        border-color: $lm-box-border;
+    }
 
     .little-box {
         background-color: $lm-box-bg;
