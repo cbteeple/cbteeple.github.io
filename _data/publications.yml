@@ -1,14 +1,29 @@
+-   title: Ultragentle manipulation of delicate structures using a soft robotic gripper
+    names: N.R. Sinatra, <b>C.B. Teeple</b>, D.M. Vogt, K.K. Parker, D.F. Gruber, and R.J. Wood
+    journal: Science Robotics
+    year: 2019
+    link: https://robotics.sciencemag.org/content/4/33/eaax5425
+    pdf_link: papers/sinatra2019.pdf
+    bib_link: papers/bib/sinatra2019.bib
+    tags:
+      - Grasping
+      - Soft Robots
+      - Deep-Sea
+
+
+
 -   title: Soft Curvature and Contact Force Sensors for Deep-Sea Grasping via Soft Optical Waveguides
     names: <b>C.B. Teeple</b>, K.P. Becker, and R.J. Wood
     journal: IEEE International Conference on Intelligent Robots and Systems (IROS)
     year: 2018
-    link: https://docs.wixstatic.com/ugd/6070d1_5fb7769a13d64a768f346b6509340e34.pdf
+    link: https://ieeexplore.ieee.org/abstract/document/8594270
     pdf_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/teeple2018_iros2018.pdf
     bib_link: https://clarkteeple.weebly.com/uploads/7/8/9/5/78958290/teeple_becker_wood_iros_2018.bib
     tags:
       - Grasping
       - Soft Robots
       - Deep-Sea
+      - Sensing
 
 
 -   title: Passive Steering of Miniature Walking Robot Using the Non-Uniformity of Robot Structure
