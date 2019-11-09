@@ -244,8 +244,9 @@
                 <div class="proj_img"><img src="img/projects/{{ proj.img }}"/></div>
             </dt>
             <dt>
-                <div class="company"><a target="_blank" href="{{proj.link}}" title="View Website" >"{{ proj.title }}"</a></div>
+                <div class="company"><a target="_blank" href="{{proj.link}}" title="View Website" >{{ proj.title }}</a></div>
                 <div class="time_period"> ({{proj.year}})</div>
+                <div>{{ proj.description }}</div>
                 <div class="proj_info" >
                     <ul class="tags">
                         {% for tag in proj.tags %}
