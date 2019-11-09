@@ -1,0 +1,13 @@
+-   title: High-Level Coordination of a Robot Arm and a Soft Pneumatic Hand
+    year: 2019-Present
+    img:  robot_pick_place.jpg
+    link: https://cbteeple.github.io/hand_arm_cbt/
+    github_link: https://github.com/cbteeple/hand_arm_cbt
+    #pdf_link:
+    #bib_link:
+    #media_link: https://www.youtube.com
+    tags:
+      - Soft Manipulation
+      - UR5e
+      - ROS
+      - Python

@@ -275,6 +275,27 @@ dd {
 }
 
 
+
+.proj_img{
+        img{
+            width: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+            max-height: 200px;
+        }
+    }
+
+
+
+
+.projects .resume_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
 //Media works backward - THESE SETTINGS ARE for DESKTOP VIEWING
 @media(min-width: $base-mobile-width) {
 
@@ -386,6 +407,17 @@ dd {
         }
         dd {
          }
+    }
+
+    .projects .resume_container{
+        flex-direction: row;
+    }
+
+    .proj_img{
+        img{
+            width: 100%;
+            
+        }
     }
 }
 
