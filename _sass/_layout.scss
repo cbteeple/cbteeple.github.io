@@ -216,12 +216,13 @@ body {
     a {@include light_transition(color)}
     .mission {@include light_transition(color)}
     .mission em {@include light_transition(color)}
-    .links a {@include light_transition(background, border, color)}
+    .links a {@include light_transition(all)}
     .footer{@include light_transition(border)}
     .tag{@include light_transition(background, color, border-color)}
     .tag:before{@include light_transition(background, color, border-color)}
 
     #headshot{@include light_transition(border)}
+    .proj_img img{@include light_transition(border)}
 }
 
 
@@ -281,6 +282,12 @@ body.light-mode {
 
     #headshot{
         border-color: $lm-box-border;
+    }
+
+    .proj_img{
+        img{
+            border-color: $lm-box-border;
+        }
     }
 
     .little-box {
@@ -363,10 +370,19 @@ body.light-mode {
     }
 
 
+    .publications .links{
+        a{
+            border-color: rgba(255,255,255,0);
+            border-width: 1px;
+            border-style: solid;
+        }
+        
+    }
+
 
     .links {
         a {
-            background: $lm-box-bg ;
+            background: none ;
             border-color: $lm-box-bg-med;
         }
 

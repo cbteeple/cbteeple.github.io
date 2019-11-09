@@ -164,7 +164,9 @@ dd {
         display: flex;
         font-size: 1.1em;
         background: none;
-        border: none;
+        border-color: rgba(0,0,0,0);
+        border-width: 1px;
+        border-style: solid;
         border-radius: 3px;
         padding: 5px;
         padding-bottom: 5px;
@@ -177,6 +179,9 @@ dd {
     a:hover{
         background: $box-bg-light ;
         text-decoration: none;
+        border-color: rgba(0,0,0,0);
+        border-width: 1px;
+        border-style: solid;
 
         .links-icon{
             fill: $link-hover;
@@ -280,13 +285,14 @@ dd {
         img{
             width: 100%;
             border-radius: 5px;
-            object-fit: cover;
             max-height: 200px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: $box-border;
+            border-style: solid;
+            object-fit: cover;
         }
     }
-
-
-
 
 .projects .resume_container{
     display: flex;
