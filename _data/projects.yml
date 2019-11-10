@@ -2,7 +2,7 @@
     year: 2019-Present
     img:  robot_pick_place.jpg
     description: I wrote some useful high-level ROS packages to coordinate a UR5e arm with my custom pressure control system for soft hands.
-    link: https://cbteeple.github.io/hand_arm_cbt/
+    link: https://cbteeple.github.io/hand_arm_cbt_docs/
     github_link: https://github.com/cbteeple/hand_arm_cbt
     #pdf_link:
     #bib_link:
