@@ -241,7 +241,9 @@
     {% for proj in site.data.projects %}
         <div class="resume_container">
             <dt>
-                <div class="proj_img"><img src="img/projects/{{ proj.img }}"/></div>
+                <a href="{{proj.link}}">
+                    <div class="proj_img"><img src="img/projects/{{ proj.img }}"/></div>
+                </a>
             </dt>
             <dt>
                 <div class="company"><a target="_blank" href="{{proj.link}}" title="View Website" >{{ proj.title }}</a></div>
