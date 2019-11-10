@@ -222,7 +222,7 @@ body {
     .tag:before{@include light_transition(background, color, border-color)}
 
     #headshot{@include light_transition(border)}
-    .proj_img img{@include light_transition(border)}
+    .proj_img img{@include light_transition(border,box-shadow)}
 }
 
 
@@ -286,6 +286,13 @@ body.light-mode {
 
     .proj_img{
         img{
+            border-color: $lm-box-border;
+        }
+    }
+
+    .proj_img:hover{
+        img{
+            box-shadow-color: $lm-box-border;
             border-color: $lm-box-border;
         }
     }
