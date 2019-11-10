@@ -17,7 +17,7 @@
     year: 2018-Present
     img:  pressure_controller.jpg
     description: Smooth pressure control is a useful and straightforward way to control soft robotic fingers. I built a custom pneumatic control system for my research, including some pretty sophisticated firmware.
-    link: https://github.com/cbteeple/pressure_controller
+    link: ttps://cbteeple.github.io/pressure_controller_docs
     github_link: https://github.com/cbteeple/pressure_controller
     #pdf_link:
     #bib_link:
