@@ -29,7 +29,7 @@
 -   title: Documenting Everything
     year: 2019-Present
     img:  docs.png
-    description: I modified a Jekyll template to 
+    description: I needed a central place to document a bunch of random procedures and commands I use daily. I am also documenting how I built the documentation site (doc-ception).
     link: https://cbteeple.github.io/docs/
     github_link: https://github.com/cbteeple/docs
     #pdf_link:
