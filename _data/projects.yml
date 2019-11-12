@@ -25,3 +25,15 @@
     tags:
       - Soft Manipulation
       - Python
+
+-   title: Documenting Everything
+    year: 2019-Present
+    img:  docs.png
+    description: I modified a Jekyll template to 
+    link: https://cbteeple.github.io/docs/
+    github_link: https://github.com/cbteeple/docs
+    #pdf_link:
+    #bib_link:
+    #media_link: https://www.youtube.com
+    tags:
+      - Web Dev.
