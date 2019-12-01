@@ -209,7 +209,7 @@ dd {
         font-size: 1.1em;
         background: none;
         border-radius: 20px;
-        border-width: 1px;
+        border-width: 1px 1px 3px 1px;
         border-style: solid;
         border-color: $box-bg-light;
         padding: 4px;
@@ -287,7 +287,7 @@ dd {
             border-radius: 5px;
             max-height: 200px;
             border-radius: 10px;
-            border-width: 1px;
+            border-width: 1px 1px 4px 1px;
             border-color: $box-border;
             border-style: solid;
             object-fit: cover;
@@ -296,7 +296,6 @@ dd {
 
 .proj_img:hover{
     img{
-        box-shadow: 0px 0px 7px 1px $lm-box-border;
         border-color:$lm-box-border;
     }
 }
