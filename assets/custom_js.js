@@ -102,7 +102,6 @@ function nav_bar(jQuery){
 
   var currentScrollPos = window.pageYOffset;
   $("#dkbox").each(function(i, el) {
-    console.log($(this))
     if ($(this).css("flex-direction") == "row"){
         if (prevScrollpos > currentScrollPos) {
             $(this).addClass('nav-down')//$(this).css('top',"0");
@@ -147,10 +146,13 @@ $(function () {
 */
 $(document).ready(readyFn);
 
+
 $(window).on('load', function () {
-    $(".load_hider").css('opacity', '1.0');
+    $(".load_hider").addClass("hidden");
+    setTimeout(function(){ $(".load_hider").addClass("behind"); }, 500);
 
 });
+
 
 
 function readyFn(jQuery) {

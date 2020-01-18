@@ -90,10 +90,57 @@ body {
 }
 
 .load_hider{
-    opacity: 0.0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+
+    background: #000;
+    opacity: 1.0;
     @include transition(opacity, $base-transition-time);
 
+
+
+    .load_hider_content{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: $white-color;
+        @include transition(transform, $base-transition-time);
+
+        .loading_text{
+            padding:0.3em;
+        }
+    }
+
+    &.hidden{
+        //z-index: -20000;
+        opacity: 0.0;
+
+        .load_hider_content{
+            transform: scale(0.5);
+        }
+
+        &.behind{
+            z-index: -20000;
+        }
+    }
+
+    .svg-inline--fa{
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+
 }
+
 
 
 
