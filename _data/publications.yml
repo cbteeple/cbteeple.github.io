@@ -1,4 +1,17 @@
--   title: Ultragentle manipulation of delicate structures using a soft robotic gripper
+-   title: Multi-Segment Soft Robotic Fingers Enable Robust Precision Grasping
+    names: <b>C.B. Teeple</b>, T.N. Koutros, M.A. Graule, and R.J. Wood
+    journal: International Journal of Robotics Research
+    year: 2020
+    #link: https://robotics.sciencemag.org/content/4/33/eaax5425
+    #pdf_link: papers/sinatra2019_ultragentle_soft_gripper.pdf
+    #bib_link: papers/bib/sinatra2019.bib
+    #media_link: https://www.youtube.com/watch?v=p5Y84HKShLo
+    tags:
+      - Grasping
+      - Soft Robots
+      - Finger Design
+
+-   title: Ultragentle Manipulation of Delicate Structures using a Soft Robotic Gripper
     names: N.R. Sinatra, <b>C.B. Teeple</b>, D.M. Vogt, K.K. Parker, D.F. Gruber, and R.J. Wood
     journal: Science Robotics
     year: 2019
