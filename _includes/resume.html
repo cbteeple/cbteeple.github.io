@@ -2,6 +2,9 @@
     <dt>
         {{site.data.bio.mission}}
     <dt/>
+    <dd>
+        {{site.data.bio.detailed}}
+    <dd/>
 </dl>
 
 
@@ -164,6 +167,36 @@
                         <i class="fa fa-globe-americas links-icon"></i> Check it out!</a>
                     </div>
                 {% endif %}
+            </dd>
+        </div>
+    {% endfor %}
+</dl>
+</div>
+
+
+<div class="little-box" id="outreach">
+    <img class="section-icon" src="img/icons/outreach.svg"> 
+<h3 class="section-title">Outreach</h3>
+<dl class="experience">
+    {% for reach in site.data.outreach %}
+        <div class="resume_container">
+            <dt>
+                <p class="period">{{ reach.period }}</p>
+            </dt><!--
+            --><dd>
+                <p class="title">{{ reach.title }}</p>
+
+                <p class="company">
+                    {% if reach.link %}
+                    <a target="_blank" href="{{reach.link}}" >
+                    {% endif %}
+                    {{ reach.event }}
+                    {% if reach.link %}
+                    </a>
+                    {% endif %}
+                </p>
+                <p class="org">{{ reach.organization }}</p>
+                <p>{{ reach.description }}</p>
             </dd>
         </div>
     {% endfor %}

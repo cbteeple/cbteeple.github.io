@@ -185,7 +185,7 @@ body {
     }
 
     html{
-        scroll-padding: 15px;
+        scroll-padding: $big_spacer*2;
     }
 
 
@@ -217,6 +217,7 @@ body{
 
 .nav-bar {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-bar .section-icon{
@@ -264,9 +265,10 @@ body{
 
 
 .nav-down{
-    top:0px;
+    //top:0px;
 }
 
 .nav-up{
-    top:-45px;
+    /* Disabled this for now*/
+    //bottom: 100%;
 }

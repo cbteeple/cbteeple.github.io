@@ -115,7 +115,8 @@ input:checked + .slider:before {
   padding-top: 10px;
   z-index:1000;
   display: flex;
-  background: $box-bg-alpha2;
+  flex-wrap: wrap;
+  background: $box-bg-darker;
 }
 
 .darkmode-label{

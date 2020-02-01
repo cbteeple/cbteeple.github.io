@@ -205,7 +205,7 @@ body {
     @include light_transition(color, background-color, background-image, background-size, font-weight);
     .bg_overlay{@include light_transition(background-size, background-image, opacity)};
     .little-box {@include light_transition(background-color, border-color)};
-    .darkmode-box{@include light_transition(background,fill,color,background,top)};
+    .darkmode-box{@include light_transition(background,fill,color,background,top,bottom)};
     .nav-item{@include light_transition(background)};
     .current{@include light_transition(background,fill,color,background)};
     .section-icon {@include light_transition(fill, width)};
@@ -214,8 +214,8 @@ body {
         .social-icon{@include light_transition(fill, color, transform)}
     };
     a {@include light_transition(color)}
-    .mission {@include light_transition(color)}
-    .mission em {@include light_transition(color)}
+    .mission dt {@include light_transition(color)}
+    .mission dt em {@include light_transition(color)}
     .links a {@include light_transition(all)}
     .footer{@include light_transition(border)}
     .tag{@include light_transition(background, color, border-color)}
@@ -241,7 +241,7 @@ body.light-mode {
     }
 
     .darkmode-box{
-        background: $lm-box-bg-alpha2;
+        background: $lm-box-bg-light; /*$lm-box-bg-alpha2;*/
     }
 
 
@@ -315,9 +315,11 @@ body.light-mode {
     }
 
     .mission {
+        dt{
         color: $lm-accent-color;
+        }
 
-        em{
+        dt em{
             color:$lm-link-color;
         }
     }
