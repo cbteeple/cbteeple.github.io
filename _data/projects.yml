@@ -37,3 +37,16 @@
     #media_link: https://www.youtube.com
     tags:
       - Web Dev.
+
+
+-   title: Harvard Library and DOI Search
+    year: 2017-2019
+    img:  doi_search.jpg
+    description: I was tired of needing to go through Harvard Library to access every paper. I could use the Harvard VPN, but for those times when I don't want to install it, I made this useful chrome extension!
+    link: https://chrome.google.com/webstore/detail/harvard-library-doi-searc/jfjodidafpjnpfgcfmoadhjldhljjkgc
+    #github_link:
+    #pdf_link:
+    #bib_link:
+    #media_link: https://www.youtube.com
+    tags:
+      - Web Dev.
