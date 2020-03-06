@@ -3,8 +3,8 @@
     journal: International Journal of Robotics Research
     year: 2020
     #link: https://robotics.sciencemag.org/content/4/33/eaax5425
-    #pdf_link: papers/sinatra2019_ultragentle_soft_gripper.pdf
-    #bib_link: papers/bib/sinatra2019.bib
+    pdf_link: papers/teeple2020_two_seg_fingers.pdf
+    #bib_link: papers/bib/teeple2020.bib
     #media_link: https://www.youtube.com/watch?v=p5Y84HKShLo
     tags:
       - Grasping
