@@ -24,7 +24,7 @@ $white-color: #ffffff;
 
 $bg-old: #181818;
 
-$bg-reg: #000;
+$bg-reg: #181818;
 
 
 
@@ -33,7 +33,7 @@ $link-hover: $bright-blue;
 
 //$link-hover: #2581BA;
 
-
+$box-bg-black: #000000;
 $box-bg: #2a2a2a;
 $box-bg-alpha: #4a4a4a55;
 $box-bg-alpha2: #4a4a4aaa;
@@ -44,7 +44,7 @@ $box-bg-darker: #131313;
 $box-border: #626262;
 
 
-$lm-bg:     #ededed;
+$lm-bg:     #e5e5e5;
 $lm-box-bg: #f5f5f5;
 $lm-box-bg-alpha: #ffffff55;
 $lm-box-bg-alpha2: #ffffffaa;
@@ -164,7 +164,7 @@ body {
 @media(min-width: $nav-switch-width){
     .nav-bar{
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     html{

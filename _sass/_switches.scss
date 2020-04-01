@@ -13,6 +13,7 @@ $overall_width: $slider_width + $slider_diameter + 2*$slider_padding + 2*$border
   display: block;
   margin-left: 0px;
   margin-right:0px;
+  margin-bottom: 5px;
   width: $overall_width+20px;
   height: $slider_diameter+ 2*$slider_padding + 2*$border_width;
 }
@@ -116,7 +117,7 @@ input:checked + .slider:before {
   z-index:1000;
   display: flex;
   flex-wrap: wrap;
-  background: $box-bg-darker;
+  background: $box-bg-black;
 }
 
 .darkmode-label{

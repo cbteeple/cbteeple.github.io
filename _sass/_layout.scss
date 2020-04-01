@@ -108,7 +108,7 @@ $max_page_width : 860px;
 .social-section{
     border-radius: 3px;
     border-width: 1px;
-    border-style: solid;
+    border-style: none;/*solid;*/
     border-color: $box-bg-light;
     padding: 5px;
     padding-top: 7px;
@@ -177,8 +177,8 @@ a {
 // CENTRALIZED LIGHT MODE
 
 .bg_overlay{
-    background-image: url('/img/blue_drawing.jpg');
-    background-repeat: repeat-y;
+    /*background-image: url('/img/blue_drawing.jpg');*/
+    /*background-repeat: repeat-y;*/
 
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -342,7 +342,7 @@ body.light-mode {
             }
 
         &:hover {
-            background: $lm-box-bg;
+            background: $lm-box-bg-light;
             border-color: $lm-box-border;
             color: $lm-link-hover;
 
