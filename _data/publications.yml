@@ -1,3 +1,17 @@
+-   title: A Dexterous Soft Robotic Hand for Delicate In-Hand Manipulation
+    names: S. Abondance, <b>C.B. Teeple</b>, and R.J. Wood
+    journal: IEEE Roboics and Automation Letters
+    year: 2020
+    #link: https://journals.sagepub.com/doi/10.1177/0278364920910465
+    pdf_link: papers/abondance2020_dexterous.pdf
+    bib_link: papers/bib/abondance2020.bib
+    #media_link: https://www.youtube.com/watch?v=p5Y84HKShLo
+    tags:
+      - In-Hand Manipulation
+      - Soft Manipulation
+      - Finger Design
+      - Hand Design
+
 -   title: Multi-Segment Soft Robotic Fingers Enable Robust Precision Grasping
     names: <b>C.B. Teeple</b>, T.N. Koutros, M.A. Graule, and R.J. Wood
     journal: International Journal of Robotics Research
