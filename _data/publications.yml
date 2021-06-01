@@ -1,3 +1,16 @@
+-   title: An Active Palm Enhances Dexterity for Soft Robotic In-Hand Manipulation
+    names: <b>C.B. Teeple</b>, G.R. Kim, M.A Graule, and R.J. Wood
+    journal: IEEE International Conference on Robotics and Automation (ICRA)
+    year: 2021
+    #link: https://ieeexplore.ieee.org/document/9134855
+    pdf_link: papers/teeple2021active.pdf
+    bib_link: papers/bib/teeple2021active.bib
+    #media_link: https://www.youtube.com/watch?v=p5Y84HKShLo
+    tags:
+      - In-Hand Manipulation
+      - Soft Manipulation
+      - Hand Design
+
 -   title: A Dexterous Soft Robotic Hand for Delicate In-Hand Manipulation
     names: S. Abondance, <b>C.B. Teeple</b>, and R.J. Wood
     journal: IEEE Robotics and Automation Letters

@@ -216,7 +216,7 @@
         <div class="resume_container">
             <dt>
                 <div class="pub_names">{{ pub.names }},</div>
-                <div class="company"><a target="_blank" href="{{pub.link}}" title="View on Journal Website" >"{{ pub.title }},"</a></div>
+                <div class="company">{% if pub.link %}<a target="_blank" href="{{pub.link}}" title="View on Journal Website" >{% endif %}"<b>{{ pub.title }}</b>,"{% if pub.link %}</a>{% endif %}</div>
                 <div class="journal">{{ pub.journal }}</div>, <div class="time_period">{{pub.year}}</div>
                 <div class="pub_info" >
                     <ul class="tags">
