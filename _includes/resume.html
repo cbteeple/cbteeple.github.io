@@ -7,8 +7,8 @@
     <dd/>
 </dl>
 
-
-<div class="little-box" id="education">
+<!--
+<div class="little-box" id="education_OFF">
 <img class="section-icon" src="img/icons/education.svg">  
 <h3 class="section-title">Education</h3>
 <dl class="education">
@@ -18,13 +18,80 @@
                 <p class="title">{{ qualification.qualification }}</p>
                 <p class="company">{{ qualification.school }}</p>
                 <p class="period">{{ qualification.period }}</p>
-            </dt><!--
-            --><dd>
+            </dt>
+            <dd>
                 <p>{{ qualification.description }}</p>
             </dd>
         </div>
     {% endfor %}
 </dl>
+</div>
+-->
+
+
+<div class="little-box" id="education">
+    <img class="section-icon" src="img/icons/education.svg">  
+    <h3 class="section-title">Education</h3>
+    <dl class="experience">
+        {% for qualification in site.data.education %}
+            <div class="resume_container">
+                <div class="cv_desktop_left"> <!--THIS IS WHERE ALL OF THE DESKTOP STUFF GOES-->
+                    <dt>
+                        <p class="company"> {{ qualification.school }}</p>
+                        <p class="period">{{ qualification.period }}</p>
+
+                        {% if qualification.school_site %}
+                        <div class="links">
+                            <a class="links-grey" target="_blank" href="{{qualification.school_site}}">
+                            <i class="fa fa-globe-americas links-icon"></i> Website</a>
+                        </div>
+                        {% endif %}
+                    </dt>
+                    <dd>
+                        <p class="title">{{ qualification.qualification }}</p><br>
+                        <p>{{ qualification.description }}</p>
+                        <div class="links">
+                        {% if qualification.link %}
+                            <a target="_blank" href="{{qualification.link}}">
+                                <i class="fa fa-globe-americas links-icon"></i> Check out my work!</a>
+                        {% endif %}
+                        </div>
+                    </dd>
+
+                </div>
+                <div class="cv_mobile_left">
+                    <dt>             
+                        <p class="title">{{ qualification.qualification }}</p>
+                        <p class="company">{{ qualification.school }}</p>
+                        <p class="period">{{ qualification.period }}</p>
+                    </dt>
+                    <dd>
+                        <!--<p class="title">{{ qualification.title }}</p>
+                        <div class="cv_mobile_left">
+                            <p class="company">{{ qualification.company }}</p>
+                            <p class="period">{{ qualification.period }}</p>
+                        </div>
+                        -->
+                        <p>{{ qualification.description }}</p>
+
+                        <div class="links">
+                            {% if qualification.school_site %}
+                                    <a class="links-grey" target="_blank" href="{{qualification.school_site}}">
+                                    <i class="fa fa-globe-americas links-icon"></i> Website</a>
+                            {% endif %}
+                            {% if qualification.link %}
+                                <a target="_blank" href="{{qualification.link}}">
+                                <i class="fa fa-globe-americas links-icon"></i> Check out my work!</a>
+                            {% endif %}
+                        </div>
+                    </dd>
+
+
+
+                </div>
+            </div>
+        {% endfor %}
+    </dl>
 </div>
 
 

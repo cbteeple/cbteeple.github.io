@@ -27,7 +27,19 @@
 
 }
 
+.experience{
+    ul li{
+	margin-left: 20px;
+    }
 
+    ul li:before {
+        //list-style: none
+        content:">";
+        display: inline-block;
+        margin-left: -20px; margin-right: 10px;
+
+    }
+}
 
 
 .resume_container:last-child{
