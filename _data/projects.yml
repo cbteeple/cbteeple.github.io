@@ -1,3 +1,17 @@
+-   title: SoMo Simulation Framework for Soft Robots
+    year: 2020-Present
+    img:  somo.png
+    description: Together with <a href="https://scholar.google.com/citations?user=1rNy1zAAAAAJ&hl=en" target="_blank">Moritz Graule</a> and many others, we are developing a fast, accurate simulation framework for continuum robots in complex dynamic environments.
+    link: https://somo.readthedocs.io/
+    github_link: https://github.com/GrauleM/somo
+    #pdf_link:
+    #bib_link:
+    media_link: https://www.youtube.com/watch?v=i3NbqcQqHhg
+    tags:
+      - Soft Manipulation
+      - Simulation
+      - Python
+
 -   title: High-Level Coordination of a Robot Arm and a Soft Pneumatic Hand
     year: 2019-Present
     img:  robot_pick_place.jpg
