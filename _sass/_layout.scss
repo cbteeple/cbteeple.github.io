@@ -254,7 +254,7 @@ body.light-mode {
         color:$lm-accent-color;
     }
 
-
+/*
     .nav-bar a {
         display: flex;
         padding:5px;
@@ -271,17 +271,17 @@ body.light-mode {
         }
     }
 
-
     .nav-bar li{
         .current{
             background: $lm-box-bg-light ;
-            color:$lm-accent-color;
 
             .section-icon{
                 fill: $lm-accent-color;
+                
             }
         }
     }
+    */
 
 
     #headshot{

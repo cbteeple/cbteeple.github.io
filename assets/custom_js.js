@@ -13,7 +13,10 @@
    *     only accounts for vertical position, not horizontal.
    */
 
-  $.fn.visible = function(partial) {
+  $.fn.visible = function(partial, tol) {
+      if (tol == null){
+        tol = 0;
+      }
     
       var $t            = $(this),
           $w            = $(window),
@@ -21,10 +24,10 @@
           viewBottom    = viewTop + $w.height(),
           _top          = $t.offset().top,
           _bottom       = _top + $t.height(),
-          compareTop    = partial === true ? _bottom : _top,
-          compareBottom = partial === true ? _top : _bottom;
-    
-    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+          compareTop    = partial === true ? _bottom-tol : _top,
+          compareBottom = partial === true ? _top : _bottom-tol;
+              
+    return (((compareBottom) <= viewBottom) && (compareTop >= viewTop));
 
   };
     
@@ -82,7 +85,7 @@ function nav_bar(jQuery){
   
   $(".nav-anchor, .little-box").each(function(i, el) {
     var el = $(el);
-    if (el.visible(true) & !first_one) {
+    if (el.visible(true, 50) & !first_one) {
         $(".nav-item").each( function () {
             if ($(this).attr('href') == '#'+el.attr('id') ){
                 $(this).addClass("current");
