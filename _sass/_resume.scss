@@ -28,15 +28,19 @@
 }
 
 .experience{
+    .description, .period{
+        margin-top: $tiny_spacer;
+    }
     ul li{
-	margin-left: 20px;
+	margin-left: $spacer;
     }
 
     ul li:before {
         //list-style: none
         content:">";
         display: inline-block;
-        margin-left: -20px; margin-right: 10px;
+        margin-left: $small_spacer_inv;
+        margin-right: $small_spacer;
 
     }
 }
