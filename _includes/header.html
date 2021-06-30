@@ -1,9 +1,18 @@
 
 <div class="darkmode-box" id="dkbox">
-    <label class="switch">
-        <input id="darkmode" type="checkbox" checked>
-        <span class="slider round"><img class="invert-icon" src="img/icons/invert.svg"></span>
-    </label>
+    <div class="darkmode-box-top" id="dkboxtop">
+        <label class="switch">
+            <input id="darkmode" type="checkbox" checked>
+            <span class="slider round"><img class="invert-icon" src="img/icons/invert.svg"></span>
+        </label>
+
+        {% if site.pdf_link %}
+        <div class="resume_pdf_link">
+            <a target="_blank" href="{{site.pdf_link}}">
+            <i class="far fa-file-pdf links-icon"></i> PDF</a>
+        </div>
+        {% endif %}
+    </div>
 
     <ul class="nav-bar" id="nav">
         <li><a class ="nav-item" href="#top">
