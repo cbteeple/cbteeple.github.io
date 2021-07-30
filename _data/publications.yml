@@ -3,8 +3,8 @@
     journal: IEEE International Conference on Intelligent Robots and Systems (IROS)
     year: 2021
     #link: https://ieeexplore.ieee.org/document/9134855
-    #pdf_link: papers/teeple2021arrangement.pdf
-    #bib_link: papers/bib/teeple2021arrangement.bib
+    pdf_link: papers/teeple2021arrangement.pdf
+    bib_link: papers/bib/teeple2021arrangement.bib
     #media_link: https://www.youtube.com/watch?v=p5Y84HKShLo
     tags:
       - In-Hand Manipulation
@@ -17,7 +17,7 @@
     year: 2021
     link: https://somo.readthedocs.io/en/latest/
     #pdf_link: papers/teeple2021arrangement.pdf
-    #bib_link: papers/bib/teeple2021arrangement.bib
+    bib_link: papers/bib/graule2021somo.bib
     media_link: https://youtube.com/playlist?list=PLMwwxVHzFgh5zaCjTKyd6zLrQFP0F3wZ7
     tags:
       - Soft Manipulation
