@@ -163,6 +163,82 @@
 
 
 
+
+<div class="little-box" id="projects">
+{% assign first_proj = true  %}
+{% for proj_type in site.data.projects.project_types %}
+{% if first_proj %}
+  {% assign first_proj = false %}
+{% else %}
+<br><br>
+{% endif %}
+<img class="section-icon" src="img/icons/projects.svg">
+<h3 class="section-title">{{ proj_type }} Projects</h3>
+<dl class="publications projects">
+    {% for proj in site.data.projects.projects %}
+    {% if proj_type == proj.type %}
+        <div class="resume_container">
+            <dt>
+                <a target="_blank" href="{{proj.link}}">
+                    <div class="proj_img"><img src="img/projects/{{ proj.img }}"/></div>
+                </a>
+            </dt>
+            <dt>
+                <div class="company"><a target="_blank" href="{{proj.link}}" title="View Website" >{{ proj.title }}</a></div>
+                <div class="time_period"> ({{proj.year}})</div>
+                <div>{{ proj.description }}</div>
+                <div class="proj_info" >
+                    <ul class="tags">
+                        {% for tag in proj.tags %}
+                            {% assign tag_link = site.data.tags[tag] %}
+                            {% if tag_link %}
+                            <li><a class ="tag" target="_blank" href="{{tag_link}}">{{tag}}</a></li>
+                            {% else%}
+                            <li><div class ="tag" target="_blank" href="{{tag_link}}">{{tag}}</div></li>
+                            {% endif %}
+                            
+                        {% endfor %}
+                    </ul>
+                </div>
+            </dt>
+            <dd>
+                {% if proj.github_link or proj.pdf_link or proj.bib_link or proj.media_link  %}
+                    <div class="links">
+                        {% if proj.github_link %}
+                            <a target="_blank" href="{{proj.github_link}}"" title="View on Github">
+                                <i class="fab fa-github links-icon"></i>
+                            </a>
+                        {% endif %}
+                        {% if proj.pdf_link %}
+                            <a class ="links_pdf" target="_blank" href="{{proj.pdf_link}}" title="Get PDF">
+                                <i class="far fa-file-pdf links-icon"></i>
+                            </a>
+                        {% endif %}
+                        {% if proj.bib_link %}
+                            <a class="links_bib"  target="_blank" href="{{proj.bib_link}}" title="Get BibTeX">
+                                <i class="fa fa-quote-right links-icon"></i>
+                            </a>
+                        {% endif %}
+                        {% if proj.media_link %}
+                            <a class="links_media"  target="_blank" href="{{proj.media_link}}" title="View Media">
+                                <i class="fas fa-film links-icon"></i>
+                            </a>
+                        {% endif %}
+
+
+                        
+                        </div>
+                {% endif %}
+            </dd>
+        </div>
+    {% endif %}
+    {% endfor %}
+</dl>
+{% endfor %}
+</div>
+
+
+
 <div class="little-box" id="leadership">
     <img class="section-icon" src="img/icons/leadership.svg"> 
 <h3 class="section-title">Leadership</h3>
@@ -328,77 +404,4 @@
     {% endfor %}
 </dl>
 </div>
-
-
-
-
-
-
-<div class="little-box" id="projects">
-<img class="section-icon" src="img/icons/projects.svg">
-<h3 class="section-title">Projects</h3>
-<dl class="publications projects">
-    {% for proj in site.data.projects %}
-        <div class="resume_container">
-            <dt>
-                <a target="_blank" href="{{proj.link}}">
-                    <div class="proj_img"><img src="img/projects/{{ proj.img }}"/></div>
-                </a>
-            </dt>
-            <dt>
-                <div class="company"><a target="_blank" href="{{proj.link}}" title="View Website" >{{ proj.title }}</a></div>
-                <div class="time_period"> ({{proj.year}})</div>
-                <div>{{ proj.description }}</div>
-                <div class="proj_info" >
-                    <ul class="tags">
-                        {% for tag in proj.tags %}
-                            {% assign tag_link = site.data.tags[tag] %}
-                            {% if tag_link %}
-                            <li><a class ="tag" target="_blank" href="{{tag_link}}">{{tag}}</a></li>
-                            {% else%}
-                            <li><div class ="tag" target="_blank" href="{{tag_link}}">{{tag}}</div></li>
-                            {% endif %}
-                            
-                        {% endfor %}
-                    </ul>
-                </div>
-            </dt>
-            <dd>
-                {% if proj.github_link or proj.pdf_link or proj.bib_link  %}
-                    <div class="links">
-                        {% if proj.github_link %}
-                            <a target="_blank" href="{{proj.github_link}}"" title="View on Github">
-                                <i class="fab fa-github links-icon"></i>
-                            </a>
-                        {% endif %}
-                        {% if proj.pdf_link %}
-                            <a class ="links_pdf" target="_blank" href="{{proj.pdf_link}}" title="Get PDF">
-                                <i class="far fa-file-pdf links-icon"></i>
-                            </a>
-                        {% endif %}
-                        {% if proj.bib_link %}
-                            <a class="links_bib"  target="_blank" href="{{proj.bib_link}}" title="Get BibTeX">
-                                <i class="fa fa-quote-right links-icon"></i>
-                            </a>
-                        {% endif %}
-                        {% if proj.media_link %}
-                            <a class="links_media"  target="_blank" href="{{proj.media_link}}" title="View Media">
-                                <i class="fas fa-film links-icon"></i>
-                            </a>
-                        {% endif %}
-
-
-                        
-                        </div>
-                {% endif %}
-            </dd>
-        </div>
-    {% endfor %}
-</dl>
-</div>
-
-
-
-
-
 

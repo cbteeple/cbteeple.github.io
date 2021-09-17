@@ -1,7 +1,43 @@
+project_types:
+    - Research
+    - Integration
+
+projects:
+-   title: In-Hand Manipulation using Soft Hands
+    year: 2019-Present
+    img:  hand_muffin_small.jpg
+    description: The last few years, I have been working to understand how to design soft robotics hands with enough dexterity to perform in-hand manipulation.  I am looking at all aspects of hand design including finger design (and relevant workspace), finger arrangement, and palm design.
+    link: https://clarkteeple.weebly.com/research#in_hand
+    #github_link:
+    #pdf_link:
+    #bib_link:
+    media_link: 'https://www.youtube.com/watch?v=y9-wqnxZVSM'
+    tags:
+      - Soft Manipulation
+      - In-Hand Manipulation
+      - PhD Research
+    type: Research
+
+-   title: Grasping and Manipulating Fabric using Soft Hands
+    year: 2019-Present
+    img:  fabric.png
+    description: Multi-dimensional compliance makes soft robotic hands well-suited for gently grasping and manipulating fabric and other thin, flexible objects.
+    link: https://clarkteeple.weebly.com/research
+    #github_link:
+    #pdf_link:
+    #bib_link:
+    #media_link:
+    tags:
+      - Soft Robots
+      - Grasping
+      - Fabric
+      - PhD Research
+    type: Research
+
 -   title: SoMo Simulation Framework for Soft Robots
     year: 2020-Present
     img:  somo.png
-    description: Together with <a href="https://scholar.google.com/citations?user=1rNy1zAAAAAJ&hl=en" target="_blank">Moritz Graule</a> and many others, we are developing a fast, accurate simulation framework for continuum robots in complex dynamic environments.
+    description: Together with <a href="https://scholar.google.com/citations?user=1rNy1zAAAAAJ&hl=en" target="_blank">Moritz Graule</a> and a few others, we are developing a fast, accurate simulation framework for continuum robots in complex, dynamic environments.
     link: https://somo.readthedocs.io/
     github_link: https://github.com/GrauleM/somo
     #pdf_link:
@@ -11,6 +47,23 @@
       - Soft Manipulation
       - Simulation
       - Python
+    type: Research
+
+-   title: Soft Robotic Grippers for Precise Grasping
+    year: 2017-Present
+    img:  pinch_grasp.jpg
+    description: How can we design soft hands with high dexterity using minimal added complexity? I've been exploring this question in my research, leading to several intersting insights about finger design for precision grasping.
+    link: https://clarkteeple.weebly.com/research#grasping
+    #github_link:
+    #pdf_link:
+    #bib_link:
+    media_link: 'https://www.youtube.com/watch?v=xP-q6xzT4Ok'
+    tags:
+      - Soft Robots
+      - Grasping
+      - Finger Design
+      - PhD Research
+    type: Research
 
 -   title: High-Level Coordination of a Robot Arm and a Soft Pneumatic Hand
     year: 2019-Present
@@ -23,14 +76,14 @@
     #media_link: https://www.youtube.com
     tags:
       - Soft Manipulation
-      - UR5e
       - ROS
       - Python
+    type: Integration
 
--   title: Smooth Pneumatic Pressure Control for Soft Robotic Hands
+-   title: 'Ctrl-P: Smooth Pneumatic Pressure Control for Soft Robots'
     year: 2018-Present
     img:  pressure_controller.jpg
-    description: Smooth pressure control is a useful and straightforward way to control soft robotic fingers. I built a custom pneumatic control system for my research, including some pretty sophisticated firmware.
+    description: Smooth pressure control is a useful and straightforward way to control soft robotic fingers. I built a custom pneumatic control system for my research, including microcontroller firmware for realtime pressure control, a python-based control interface, and ROS drivers for integration with other robotic subsystems.
     link: https://cbteeple.github.io/pressure_controller_docs
     github_link: https://github.com/cbteeple/pressure_controller
     #pdf_link:
@@ -38,12 +91,15 @@
     #media_link: https://www.youtube.com
     tags:
       - Soft Manipulation
+      - C++
       - Python
+      - ROS
+    type: Integration
 
 -   title: Documenting Everything
     year: 2019-Present
     img:  docs.png
-    description: I needed a central place to document a bunch of random procedures and commands I use daily. I am also documenting how I built the documentation site (doc-ception).
+    description: I needed a central place to document a bunch of random procedures and commands I use daily. I am also using this documentation site to document how I built it (doc-ception).
     link: https://cbteeple.github.io/docs/
     github_link: https://github.com/cbteeple/docs
     #pdf_link:
@@ -51,16 +107,17 @@
     #media_link: https://www.youtube.com
     tags:
       - Web Dev.
+    type: Integration
 
 
--   title: Harvard Library and DOI Search
-    year: 2017-2019
-    img:  doi_search.jpg
-    description: I was tired of needing to go through Harvard Library to access every paper. I could use the Harvard VPN, but for those times when I don't want to install it, I made this useful chrome extension!
-    link: https://chrome.google.com/webstore/detail/harvard-library-doi-searc/jfjodidafpjnpfgcfmoadhjldhljjkgc
+#-   title: Harvard Library and DOI Search
+#    year: 2017-2019
+#    img:  doi_search.jpg
+#    description: I was tired of needing to go through Harvard Library to access every paper. I could use the Harvard VPN, but for those times when I don't want to install it, I made this useful chrome extension!
+#    link: https://chrome.google.com/webstore/detail/harvard-library-doi-searc/jfjodidafpjnpfgcfmoadhjldhljjkgc
     #github_link:
     #pdf_link:
     #bib_link:
     #media_link: https://www.youtube.com
-    tags:
-      - Web Dev.
+#    tags:
+#      - Web Dev.
