@@ -181,13 +181,16 @@ dd {
 
 
 
-
+.publications .resume_container{
+    flex-direction: column;
+}
 
 
 .publications  .links{
-    display: grid;
+    display: flex;
     margin-top: 0;
     justify-content: center;
+    flex-direction: row;
 
     a{
         display: flex;
@@ -449,6 +452,12 @@ dd {
             // padding-right: $spacer;
         }
         dd {
+            .links{
+                flex-direction: column;
+            }
+         }
+         .resume_container{
+            flex-direction: row;
          }
     }
 

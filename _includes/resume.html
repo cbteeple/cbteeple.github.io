@@ -228,6 +228,12 @@
 
                         
                         </div>
+                {% else %}
+                    <div class="links">
+                        <a target="" href="" title="" style="pointer-events: none">
+                            <i style="visibility:hidden !important;" class="fa fa-fw links-icon"></i>
+                        </a>
+                    </div>
                 {% endif %}
             </dd>
         </div>
@@ -372,7 +378,7 @@
                 </div>
             </dt>
             <dd>
-                {% if pub.link or pub.pdf_link or pub.bib_link  %}
+                {% if pub.link or pub.pdf_link or pub.bib_link or pub.media_link %}
                     <div class="links">
                         {% if pub.link %}
                             <a target="_blank" href="{{pub.link}}"" title="View on Journal Website">
@@ -398,6 +404,12 @@
 
                         
                         </div>
+                {% else %}
+                    <div class="links">
+                        <a target="" href="" title="" style="pointer-events: none">
+                            <i style="visibility:hidden !important;" class="fa fa-fw links-icon"></i>
+                        </a>
+                    </div>
                 {% endif %}
             </dd>
         </div>
