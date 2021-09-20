@@ -92,5 +92,3 @@ assets:
   plugins:
     css: { autoprefixer: {}}
     img: { optim: {}}
-
-theme: jekyll-theme-cayman
