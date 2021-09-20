@@ -18,22 +18,6 @@ projects:
       - PhD Research
     type: Research
 
--   title: Grasping and Manipulating Fabric using Soft Hands
-    year: 2019-Present
-    img:  fabric.png
-    description: Multi-dimensional compliance makes soft robotic hands well-suited for gently grasping and manipulating fabric and other thin, flexible objects.
-    link: https://clarkteeple.weebly.com/research
-    #github_link:
-    #pdf_link:
-    #bib_link:
-    #media_link:
-    tags:
-      - Soft Robots
-      - Grasping
-      - Fabric
-      - PhD Research
-    type: Research
-
 -   title: SoMo Simulation Framework for Soft Robots
     year: 2020-Present
     img:  somo.png
@@ -48,9 +32,27 @@ projects:
       - Simulation
       - Python
     type: Research
+    
+
+-   title: Grasping and Manipulating Fabric using Soft Hands
+    year: 2020-Present
+    img:  fabric.png
+    description: Multi-dimensional compliance makes soft robotic hands well-suited for gently grasping and manipulating fabric and other thin, flexible objects.
+    link: https://clarkteeple.weebly.com/research
+    #github_link:
+    #pdf_link:
+    #bib_link:
+    #media_link:
+    tags:
+      - Soft Robots
+      - Grasping
+      - Fabric
+      - PhD Research
+    type: Research
+
 
 -   title: Soft Robotic Grippers for Precise Grasping
-    year: 2017-Present
+    year: 2017-2019
     img:  pinch_grasp.jpg
     description: How can we design soft hands with high dexterity using minimal added complexity? I've been exploring this question in my research, leading to several intersting insights about finger design for precision grasping.
     link: https://clarkteeple.weebly.com/research#grasping
