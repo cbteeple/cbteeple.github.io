@@ -15,7 +15,6 @@ projects:
     tags:
       - Soft Manipulation
       - In-Hand Manipulation
-      - PhD Research
     type: Research
 
 -   title: SoMo Simulation Framework for Soft Robots
@@ -47,7 +46,6 @@ projects:
       - Soft Robots
       - Grasping
       - Fabric
-      - PhD Research
     type: Research
 
 
@@ -64,7 +62,6 @@ projects:
       - Soft Robots
       - Grasping
       - Finger Design
-      - PhD Research
     type: Research
 
 -   title: High-Level Coordination of a Robot Arm and a Soft Pneumatic Hand
