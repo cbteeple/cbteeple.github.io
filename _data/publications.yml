@@ -1,17 +1,3 @@
--   title: Controlling Palm-Object Interactions via Friction for Enhanced In-Hand Manipulation
-    names: <b>C.B. Teeple</b>, B. Aktas, M.C. Yuen, G.R. Kim, R.D. Howe, and R.J. Wood
-    journal: IEEE International Conference on Robotics and Automation (ICRA)
-    year: 2022 (In-Review)
-    #link: 
-    #pdf_link: papers/teeple2022controlling.pdf
-    #bib_link: papers/bib/teeple2022controlling.bib
-    #media_link: 
-    tags:
-      - In-Hand Manipulation
-      - Soft Manipulation
-      - Hand Design
-
-
 -   title: Multi-Dimensional Compliance of Soft Grippers Enables Gentle Interaction with Thin, Flexible Objects
     names: <b>C.B. Teeple</b>, J. Werfel, and R.J. Wood
     journal: IEEE International Conference on Robotics and Automation (ICRA)
@@ -23,6 +9,19 @@
     tags:
       - Grasping
       - Soft Robots
+      
+-   title: Controlling Palm-Object Interactions via Friction for Enhanced In-Hand Manipulation
+    names: <b>C.B. Teeple</b>, B. Aktas, M.C. Yuen, G.R. Kim, R.D. Howe, and R.J. Wood
+    journal: IEEE International Conference on Robotics and Automation (ICRA)
+    year: 2022 (In-Review)
+    link: https://ieeexplore.ieee.org/document/9684669
+    pdf_link: papers/teeple2022controlling.pdf
+    bib_link: papers/bib/teeple2022controlling.bib
+    #media_link: 
+    tags:
+      - In-Hand Manipulation
+      - Soft Manipulation
+      - Hand Design
 
 
 -   title: The Role of Digit Arrangement in Soft Robotic In-Hand Manipulation
