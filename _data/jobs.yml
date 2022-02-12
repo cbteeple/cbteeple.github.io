@@ -1,14 +1,28 @@
+-   title: Postdoctoral Fellow
+    company: Harvard Microrobotics Lab
+    company_site: micro.seas.harvard.edu
+    description: Advised by Prof. Robert Wood, I am continuing my work on soft manipulation with a new focus on using simulation 
+    period: 2022-Present
+    link: https://clarkteeple.weebly.com/research.html
+    
 -   title: PhD Candidate
     company: Harvard Microrobotics Lab
     company_site: micro.seas.harvard.edu
-    description: Advised by Prof. Robert Wood, I study soft robotic hands for a variety of real-world applications including deep-sea sampling, precise grasping, and in-hand manipulation. 
-    period: 2016-Present
+    description: Advised by Prof. Robert Wood, I studied soft robotic hands for a variety of real-world applications including deep-sea sampling, precise grasping, and in-hand manipulation. 
+    period: 2016-2021
     link: https://clarkteeple.weebly.com/research.html
 
 -   title: 'Undergraduate Research Assisant'
     company: 'Vibration and Acoustics Laboratory: Microsystems, University of Michigan'
     company_site: https://microsystems.engin.umich.edu/
     description: My work involved studying locomotion of small-scale legged robots. Our robots used piezoelectric bending actuators to move the legs at very high frequencies.
+    period: 2015-2016
+    link: https://clarkteeple.weebly.com/research.html
+    
+-   title: 'Senior Design Team Member'
+    company: 'University of Michigan'
+    company_site: https://clarkteeple.weebly.com/senior-design-eng-490.html
+    description: My team developed a haptic wristband and associated vision system to help provide navigational directions for people with low vision. I was in charge of the haptic wristband design and integration, and was able to evaluate and refine our design through user studies at the Kellogg Eye Center.
     period: 2015-2016
     link: https://clarkteeple.weebly.com/research.html
 
