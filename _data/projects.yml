@@ -17,6 +17,7 @@ projects:
       - In-Hand Manipulation
     type: Research
 
+
 -   title: SoMo Simulation Framework for Soft Robots
     year: 2020-Present
     img:  somo.png
@@ -64,11 +65,25 @@ projects:
       - Finger Design
     type: Research
 
+
+-   title: "Sorotraj: Generate trajectories for soft robots"
+    year: 2020-Present
+    img:  sorotraj_logo.png
+    description: I worte a useful tool to generate trajectory functions for use with both <a href="https://ctrl-p.cbteeple.com/" target="_blank">Ctrl-P pressure controllers</a> (for real-world soft robots) and <a href="https://somo.readthedocs.io/" target="_blank">SoMo simulations</a> (for virtual soft robots).
+    link: https://sorotraj.readthedocs.io/
+    github_link: https://github.com/harvard-microrobotics/sorotraj
+    tags:
+      - Soft Manipulation
+      - Simulation
+      - Python
+    type: Integration
+
+
 -   title: High-Level Coordination of a Robot Arm and a Soft Pneumatic Hand
     year: 2019-Present
     img:  robot_pick_place.jpg
     description: I wrote some useful high-level ROS packages to coordinate a UR5e arm with my custom pressure control system for soft hands.
-    link: https://cbteeple.github.io/hand_arm_cbt_docs/
+    link: https://hand-arm.cbteeple.com/
     github_link: https://github.com/cbteeple/hand_arm_cbt
     #pdf_link:
     #bib_link:
@@ -79,11 +94,12 @@ projects:
       - Python
     type: Integration
 
+
 -   title: 'Ctrl-P: Smooth Pneumatic Pressure Control for Soft Robots'
     year: 2018-Present
-    img:  pressure_controller.jpg
-    description: Smooth pressure control is a useful and straightforward way to control soft robotic fingers. I built a custom pneumatic control system for my research, including microcontroller firmware for realtime pressure control, a python-based control interface, and ROS drivers for integration with other robotic subsystems.
-    link: https://cbteeple.github.io/pressure_controller_docs
+    img:  pressure_controller_v3-0.jpg
+    description: Smooth pressure control is a useful and straightforward way to control soft robotic fingers. I built a custom pneumatic control system for my research, including microcontroller firmware for realtime pressure control, a python-based control interface, and ROS drivers for integration with other robotic subsystems.<br><br>I have now built four systems, all of which are actively used by lab members on a daily basis. Additionally, systems can be easily chained together for applications requiring more than 10 channels.
+    link: https://ctrl-p.cbteeple.com/
     github_link: https://github.com/cbteeple/pressure_controller
     #pdf_link:
     #bib_link:
@@ -95,11 +111,28 @@ projects:
       - ROS
     type: Integration
 
+
+-   title: 'Custom PCB for Ctrl-P systems'
+    year: 2018-Present
+    img:  board_rev3-4_populated.jpg
+    description: I designed a custom PCB to route pressure sensor signals and valve control circuits to/from a Teensy 3.5 microcontroller. This board also has several exapansion pins exposed, and buttons for debugging.
+    link: https://ctrl-p.cbteeple.com/latest/hardware
+    #github_link: https://github.com/cbteeple/pressure_controller
+    #pdf_link:
+    #bib_link:
+    #media_link: https://www.youtube.com
+    tags:
+      - Electronics
+      - PCB Design
+
+    type: Integration
+
+
 -   title: Documenting Everything
     year: 2019-Present
     img:  docs.png
     description: I needed a central place to document a bunch of random procedures and commands I use daily. I am also using this documentation site to document how I built it (doc-ception).
-    link: https://cbteeple.github.io/docs/
+    link: https://docs.cbteeple.com/
     github_link: https://github.com/cbteeple/docs
     #pdf_link:
     #bib_link:
