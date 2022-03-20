@@ -1,3 +1,17 @@
+-   title: Design Principles for Improving Precision and Dexterity of Soft Robotic Hands
+    names: <b>C.B. Teeple</b>
+    journal: PhD Dissertation
+    year: 2022
+    #link: 
+    pdf_link: papers/teeple2022dissertation.pdf
+    #bib_link: papers/bib/teeple2022multi.bib
+    #media_link: 
+    tags:
+      - Soft Manipulation
+      - Grasping
+      - In-Hand Manipulation
+      
+
 -   title: Multi-Dimensional Compliance of Soft Grippers Enables Gentle Interaction with Thin, Flexible Objects
     names: <b>C.B. Teeple</b>, J. Werfel, and R.J. Wood
     journal: IEEE International Conference on Robotics and Automation (ICRA)
