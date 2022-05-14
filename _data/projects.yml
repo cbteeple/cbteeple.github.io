@@ -53,7 +53,7 @@ projects:
 -   title: Soft Robotic Grippers for Precise Grasping
     year: 2017-2019
     img:  pinch_grasp.jpg
-    description: How can we design soft hands with high dexterity using minimal added complexity? I've been exploring this question in my research, leading to several intersting insights about finger design for precision grasping.
+    description: How can we design soft hands with high dexterity using minimal added complexity? I've been exploring this question in my research, leading to several interesting insights about finger design for precision grasping.
     link: https://clarkteeple.weebly.com/research#grasping
     #github_link:
     #pdf_link:
@@ -81,7 +81,7 @@ projects:
 -   title: "Sorotraj: Generate trajectories for soft robots"
     year: 2020-Present
     img:  sorotraj_logo.png
-    description: I worte a useful tool to generate trajectory functions for use with both <a href="https://ctrl-p.cbteeple.com/" target="_blank">Ctrl-P pressure controllers</a> (for real-world soft robots) and <a href="https://somo.readthedocs.io/" target="_blank">SoMo simulations</a> (for virtual soft robots).
+    description: I wrote a useful tool to generate trajectory functions for use with both <a href="https://ctrl-p.cbteeple.com/" target="_blank">Ctrl-P pressure controllers</a> (for real-world soft robots) and <a href="https://somo.readthedocs.io/" target="_blank">SoMo simulations</a> (for virtual soft robots).
     link: https://sorotraj.readthedocs.io/
     github_link: https://github.com/harvard-microrobotics/sorotraj
     tags:
@@ -127,7 +127,7 @@ projects:
 -   title: 'Custom PCB for Ctrl-P systems'
     year: 2018-Present
     img:  board_rev3-4_populated.jpg
-    description: I designed a custom PCB to route pressure sensor signals and valve control circuits to/from a Teensy 3.5 microcontroller. This board also has several exapansion pins exposed, and buttons for debugging.
+    description: I designed a custom PCB to route pressure sensor signals and valve control circuits to/from a Teensy 3.5 microcontroller. This board also has several expansion pins exposed, and buttons for debugging.
     link: https://ctrl-p.cbteeple.com/latest/hardware
     #github_link: https://github.com/cbteeple/pressure_controller
     #pdf_link:
