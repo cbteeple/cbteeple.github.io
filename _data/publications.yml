@@ -17,9 +17,9 @@
     journal: IEEE International Conference on Robotics and Automation (ICRA)
     year: 2022
     #link: 
-    pdf_link: papers/teeple2022_thin_flexible_objects.pdf
+    pdf_link: papers/teeple2022thin_flexible_objects.pdf
     #bib_link: papers/bib/teeple2022multi.bib
-    #media_link:
+    media_link: papers/posters/teeple2022thin_flexible_objects.pdf
     tags:
       - Grasping
       - Soft Robots
@@ -44,7 +44,7 @@
     link: https://ieeexplore.ieee.org/document/9684669
     pdf_link: papers/teeple2022controlling.pdf
     bib_link: papers/bib/teeple2022controlling.bib
-    #media_link: 
+    media_link: papers/posters/teeple2022palm_friction.pdf
     tags:
       - In-Hand Manipulation
       - Soft Manipulation
