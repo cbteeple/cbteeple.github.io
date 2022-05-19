@@ -17,9 +17,9 @@
     journal: IEEE International Conference on Robotics and Automation (ICRA)
     year: 2022
     #link: 
-    #pdf_link: papers/teeple2022multi.pdf
+    pdf_link: papers/teeple2022_thin_flexible_objects.pdf
     #bib_link: papers/bib/teeple2022multi.bib
-    #media_link: 
+    #media_link:
     tags:
       - Grasping
       - Soft Robots
