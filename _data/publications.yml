@@ -1,3 +1,18 @@
+-   title: 'Contact-implicit Trajectory and Grasp Planning
+ for Soft Continuum Manipulators'
+    names: M.A. Graule, <b>C.B. Teeple</b>, and R.J. Wood
+    journal: IEEE International Conference on Intelligent Robots and Systems (IROS)
+    year: 2022
+    #link: 
+    pdf_link: papers/graule2022contact.pdf
+    #bib_link: papers/bib/graule2022contact.bib
+    #media_link: 
+    tags:
+      - Modeling
+      - Soft Manipulation
+      - Simulation
+
+
 -   title: Design Principles for Improving Precision and Dexterity of Soft Robotic Hands
     names: <b>C.B. Teeple</b>
     journal: PhD Dissertation
