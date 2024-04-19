@@ -1,16 +1,25 @@
--   title: Community Outreach Lead
-    organization: SEAS Graduate Council
-    location: Harvard University
-    description: Leading a team of 8 dedicated grad students, I strive to push the Engineering School's community outreach activities to the next level. From volunteering at FIRST robotics competitions, to serving meals at local homeless shelters, our goal is to make it easier for grad students to volunteer!
-    period: 2019-Present
-    link: https://gc.seas.harvard.edu/outreach
+-   title: Technical Lead
+    organization: RightPick 4 Industrial Camera Product
+    location: RightHand Robotics
+    description: Lead the development of a high-performance, industrial-grade
+        3D camera product as part of the RightPick 4 piece-picking system, and
+        successfully brought it to market.
+    period: 2022-2024
+    link: https://righthandrobotics.com/products
+
+# -   title: Community Outreach Lead
+#     organization: SEAS Graduate Council
+#     location: Harvard University
+#     description: Leading a team of 8 dedicated grad students, I strive to push the Engineering School's community outreach activities to the next level. From volunteering at FIRST robotics competitions, to serving meals at local homeless shelters, our goal is to make it easier for grad students to volunteer!
+#     period: 2019-2021
+#     link: https://gc.seas.harvard.edu/outreach
 
 
 -   title: STEM Outreach Co-Lead
     organization: Harvard Microrobotics Lab
     location: Harvard University
     description: I help coordinate our lab's efforts to attend local STEM expos and science fairs. Our lab is excited about outreach, and I am excited about coordinating it!
-    period: 2016-Present
+    period: 2016-2021
     link: https://www.micro.seas.harvard.edu/   
 
 
@@ -22,9 +31,9 @@
     link: https://gc.seas.harvard.edu/
 
 
--   title: Campus Outreach Officer
-    organization: Tau Beta Pi
-    location: University of Michigan
-    description: I worked to improve student life for all engineering students. As the manager of TBP's engineering tutoring service, I improved the speed and ease of requesting tutors by designing an online request system. Additionally, I worked to improve mental health through free breakfast for students every week.
-    period: Spring 2016
-    link: https://tbp.engin.umich.edu
+# -   title: Campus Outreach Officer
+#     organization: Tau Beta Pi
+#     location: University of Michigan
+#     description: I worked to improve student life for all engineering students. As the manager of TBP's engineering tutoring service, I improved the speed and ease of requesting tutors by designing an online request system. Additionally, I worked to improve mental health through free breakfast for students every week.
+#     period: Spring 2016
+#     link: https://tbp.engin.umich.edu
