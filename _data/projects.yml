@@ -1,8 +1,31 @@
 project_types:
+    - Product Development
     - Research
     - Integration
 
 projects:
+-   title: Industrial-Grade 3D Camera Product
+    year: 2022-2024
+    img:  rhr_camera.png
+    description: Lead the development of a high-performance, industrial-grade 3D camera 
+        product as part of the RightPick 4 piece-picking system, and successfully brought 
+        it to market. As the Tech Lead for this project, I lead a cross-functional team 
+        of subject-matter experts, and coordinated the hardware design and software 
+        architecture to ensure seamless integration with the rest of the RightPick 4 system. 
+        As an individual contributor, I owned both the hardware design and industrial design 
+        of the camera system, and developed several core software features enabling its operation.
+    link: https://righthandrobotics.com/products
+    #github_link:
+    #pdf_link:
+    #bib_link:
+    #media_link: 'https://www.youtube.com/watch?v=y9-wqnxZVSM'
+    tags:
+      - Systems Engineering
+      - Python
+      - Mechanical Design
+    type: Product Development
+
+    
 -   title: In-Hand Manipulation using Soft Hands
     year: 2019-Present
     img:  hand_muffin_small.jpg
