@@ -22,35 +22,35 @@
     period: 2016-2021
     link: https://clarkteeple.weebly.com/research.html
 
--   title: 'Undergraduate Research Assistant'
-    company: 'Vibration and Acoustics Laboratory: Microsystems, University of Michigan'
-    company_site: https://microsystems.engin.umich.edu/
-    description: My work involved studying locomotion of small-scale legged robots. Our robots used piezoelectric bending actuators to move the legs at very high frequencies.
-    period: 2015-2016
-    link: https://clarkteeple.weebly.com/research.html
+# -   title: 'Undergraduate Research Assistant'
+#     company: 'Vibration and Acoustics Laboratory: Microsystems, University of Michigan'
+#     company_site: https://microsystems.engin.umich.edu/
+#     description: My work involved studying locomotion of small-scale legged robots. Our robots used piezoelectric bending actuators to move the legs at very high frequencies.
+#     period: 2015-2016
+#     link: https://clarkteeple.weebly.com/research.html
     
--   title: 'Mechanical Design Lead (Senior Design)'
-    company: 'University of Michigan'
-    company_site: https://clarkteeple.weebly.com/senior-design-eng-490.html
-    description: My interdisciplinary team developed a haptic wristband and associated vision system to help provide navigational directions for people with low vision. As the mechanical design lead, I was in charge of the haptic wristband design and integration, and was able to evaluate and refine our design through user studies at the Kellogg Eye Center.
-    period: 2015-2016
-    link: https://clarkteeple.weebly.com/senior-design-eng-490.html
+# -   title: 'Mechanical Design Lead (Senior Design)'
+#     company: 'University of Michigan'
+#     company_site: https://clarkteeple.weebly.com/senior-design-eng-490.html
+#     description: My interdisciplinary team developed a haptic wristband and associated vision system to help provide navigational directions for people with low vision. As the mechanical design lead, I was in charge of the haptic wristband design and integration, and was able to evaluate and refine our design through user studies at the Kellogg Eye Center.
+#     period: 2015-2016
+#     link: https://clarkteeple.weebly.com/senior-design-eng-490.html
 
--   title: 'Summer Intern'
-    company: 'MIT Lincoln Laboratory'
-    description: I worked in the Chemical, Microsystems, and Nanoscale Technology group. I developed control systems and a LabVIEW user interface to automate the operation of a mobile mass spectrometry platform for use in improving canine explosives detection training.
-    period: 'Summer 2015'
-    company_site: https://www.ll.mit.edu/
+# -   title: 'Summer Intern'
+#     company: 'MIT Lincoln Laboratory'
+#     description: I worked in the Chemical, Microsystems, and Nanoscale Technology group. I developed control systems and a LabVIEW user interface to automate the operation of a mobile mass spectrometry platform for use in improving canine explosives detection training.
+#     period: 'Summer 2015'
+#     company_site: https://www.ll.mit.edu/
 
--   title: 'Undergraduate Research Assistant'
-    company: 'Lahann Laboratory, University of Michigan'
-    company_site: http://lahann.engin.umich.edu/
-    description: I developed a LabVIEW / CAD interface to expand the capabilities of the lab’s existing tissue engineering scaffold manufacturing process. I then used this new interface to design and manufacture novel scaffold architectures.
-    period: '2013-2015'
-    link: https://clarkteeple.weebly.com/older-work.html
+# -   title: 'Undergraduate Research Assistant'
+#     company: 'Lahann Laboratory, University of Michigan'
+#     company_site: http://lahann.engin.umich.edu/
+#     description: I developed a LabVIEW / CAD interface to expand the capabilities of the lab’s existing tissue engineering scaffold manufacturing process. I then used this new interface to design and manufacture novel scaffold architectures.
+#     period: '2013-2015'
+#     link: https://clarkteeple.weebly.com/older-work.html
 
--   title: 'Manufacturing Engineering Intern'
-    company: 'Kandu Incorporated'
-    description: I designed and built fixtures to aid physically/mentally disabled clients with production tasks. I also analyzed production lines in order to improve product flow and increase efficiency.
-    period: 'Summer 2013'
-    company_site: https://www.linkedin.com/company/kandu-incorporated/  
+# -   title: 'Manufacturing Engineering Intern'
+#     company: 'Kandu Incorporated'
+#     description: I designed and built fixtures to aid physically/mentally disabled clients with production tasks. I also analyzed production lines in order to improve product flow and increase efficiency.
+#     period: 'Summer 2013'
+#     company_site: https://www.linkedin.com/company/kandu-incorporated/  
