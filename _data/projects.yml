@@ -27,7 +27,7 @@ projects:
 
     
 -   title: In-Hand Manipulation using Soft Hands
-    year: 2019-Present
+    year: 2019-2022
     img:  hand_muffin_small.jpg
     description: The last few years, I have been working to understand how to design soft robotics hands with enough dexterity to perform in-hand manipulation.  I am looking at all aspects of hand design including finger design (and relevant workspace), finger arrangement, and palm design.
     link: https://clarkteeple.weebly.com/research#in_hand
@@ -42,7 +42,7 @@ projects:
 
 
 -   title: SoMo Simulation Framework for Soft Robots
-    year: 2020-Present
+    year: 2020-2022
     img:  somo.png
     description: Together with <a href="https://scholar.google.com/citations?user=1rNy1zAAAAAJ&hl=en" target="_blank">Moritz Graule</a> and a few others, we are developing a fast, accurate simulation framework for continuum robots in complex, dynamic environments.
     link: https://somo.readthedocs.io/
@@ -58,7 +58,7 @@ projects:
     
 
 -   title: Grasping and Manipulating Fabric using Soft Hands
-    year: 2020-Present
+    year: 2020-2022
     img:  fabric.png
     description: Multi-dimensional compliance makes soft robotic hands well-suited for gently grasping and manipulating fabric and other thin, flexible objects.
     link: https://clarkteeple.weebly.com/research
@@ -90,7 +90,7 @@ projects:
 
 
 -   title: "Armstron: Use a robot arm for materials testing"
-    year: 2022-Present
+    year: 2022-2022
     img:  armstron_logo.png
     description: This ROS package and associated GUI make use of the 6-axis force/torque sensor on the Universal Robot e-series arms to apply complex loads to materials. We can essentially perform tests similar to an Instron Uniaxial Testing machine, but in all six axes.
     link: https://armstron.readthedocs.io/
@@ -102,7 +102,7 @@ projects:
     
 
 -   title: "Sorotraj: Generate trajectories for soft robots"
-    year: 2020-Present
+    year: 2020-2022
     img:  sorotraj_logo.png
     description: I wrote a useful tool to generate trajectory functions for use with both <a href="https://ctrl-p.cbteeple.com/" target="_blank">Ctrl-P pressure controllers</a> (for real-world soft robots) and <a href="https://somo.readthedocs.io/" target="_blank">SoMo simulations</a> (for virtual soft robots).
     link: https://sorotraj.readthedocs.io/
@@ -115,7 +115,7 @@ projects:
 
 
 -   title: High-Level Coordination of a Robot Arm and a Soft Pneumatic Hand
-    year: 2019-Present
+    year: 2019-2022
     img:  robot_pick_place.jpg
     description: I wrote some useful high-level ROS packages to coordinate a UR5e arm with my custom pressure control system for soft hands.
     link: https://hand-arm.cbteeple.com/
@@ -131,7 +131,7 @@ projects:
 
 
 -   title: 'Ctrl-P: Smooth Pneumatic Pressure Control for Soft Robots'
-    year: 2018-Present
+    year: 2018-2022
     img:  pressure_controller_v3-0.jpg
     description: Smooth pressure control is a useful and straightforward way to control soft robotic fingers. I built a custom pneumatic control system for my research, including microcontroller firmware for realtime pressure control, a python-based control interface, and ROS drivers for integration with other robotic subsystems.<br><br>I have now built four systems, all of which are actively used by lab members on a daily basis. Additionally, systems can be easily chained together for applications requiring more than 10 channels.
     link: https://ctrl-p.cbteeple.com/
@@ -148,7 +148,7 @@ projects:
 
 
 -   title: 'Custom PCB for Ctrl-P systems'
-    year: 2018-Present
+    year: 2018-2022
     img:  board_rev3-4_populated.jpg
     description: I designed a custom PCB to route pressure sensor signals and valve control circuits to/from a Teensy 3.5 microcontroller. This board also has several expansion pins exposed, and buttons for debugging.
     link: https://ctrl-p.cbteeple.com/latest/hardware
